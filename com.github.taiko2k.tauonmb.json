@@ -27,8 +27,8 @@
             "mkdir -p /app/share/icons/hicolor/scalable/apps",
             "install -D extra/tauonmb.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
             "install -D extra/tauonmb-symbolic.svg /app/share/icons/hicolor/scalable/${FLATPAK_ID}-symbolic.svg",
-            "install -D gui/icon-64.png /app/share/icons/hicolor/64x64/apps/${FLATPAK_ID}.png",
-            "install -D gui/icon-128.png /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png",
+            "install -D assets/icon-64.png /app/share/icons/hicolor/64x64/apps/${FLATPAK_ID}.png",
+            "install -D assets/icon-128.png /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png",
             "install -D extra/com.github.taiko2k.tauonmb.appdata.xml /app/share/metainfo/${FLATPAK_ID}.appdata.xml",
             "install -D extra/com.github.taiko2k.tauonmb.desktop /app/share/applications/${FLATPAK_ID}.desktop",
             "install -D extra/com.github.taiko2k.tauonmb.sh /app/bin/com.github.taiko2k.tauonmb.sh"
@@ -37,7 +37,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"a332eaa4e0cba4343e147519d736fbfb4e7b6845"
+               "commit":"a065b5df30733d6cbcb9a2e08b988cb18955261c"
             }
          ]
       },
@@ -50,8 +50,8 @@
          "sources":[
             {
                "type":"archive",
-               "url":"https://github.com/Taiko2k/tauonmb/releases/download/v3.4.0/basslibs64-dec2018.zip",
-               "sha256":"137355b217932047af553aca02584596916b25a73514ce571a8239b47034b1c8"
+               "url":"https://github.com/Taiko2k/TauonMusicBox/releases/download/v3.7.0/basslibs64-march2019.zip",
+               "sha256":"ed8380350c2cc71f655cb41e332e72d1bec58833d57bb4bf9c9746acb900c8ef"
             }
          ]
       },
