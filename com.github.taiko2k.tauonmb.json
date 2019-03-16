@@ -37,7 +37,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"7228198f3c9e96651e654d147ef783512550c766"
+               "commit":"d13500d638be652db4a9a2fc4c56532b706869c6"
             }
          ]
       },
@@ -134,26 +134,17 @@
          ]
       },
       {
-         "name":"pylast-git",
-         "buildsystem":"simple",
-         "build-commands":[
-            "pip3 install --prefix=${FLATPAK_DEST} ."
-         ],
-         "sources":[
-            {
-               "type":"git",
-               "url":"https://github.com/pylast/pylast",
-               "commit":"b30fe33cc122db0939f5ae53b5e71386eeb024a3"
-            }
-         ]
-      },
-      {
          "name":"python-deps",
          "buildsystem":"simple",
          "build-commands":[
-            "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} pillow dbus-python flask hsaudiotag3k pysdl2 stagger send2trash pylyrics plexapi"
+            "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} pillow pylast dbus-python flask hsaudiotag3k pysdl2 stagger send2trash pylyrics plexapi"
          ],
          "sources":[
+            {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/c1/3b/05414f6c406d571604a6ee19530ba0a0bd35a8c2cae158ffac0caaa74179/pylast-3.1.0.tar.gz",
+            "sha256": "7eb58682beccc0052c3284aba64a9a6454b5e89706f789ebeb2403dc1045606a"
+            },
             {
                "type":"file",
                "url":"https://files.pythonhosted.org/packages/dd/bf/4138e7bfb757de47d1f4b6994648ec67a51efe58fa907c1e11e350cddfca/six-1.12.0.tar.gz",
