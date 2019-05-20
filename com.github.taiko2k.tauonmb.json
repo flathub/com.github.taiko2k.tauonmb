@@ -37,7 +37,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"eda9ad591e6dc8f6c439985c4e1f9b6e5e4fdcf1"
+               "commit":"c44dcf5130568b3eb8708f128c1d656dda918769"
             }
          ]
       },
@@ -158,138 +158,153 @@
          ]
       },
       {
-         "name":"python-deps",
-         "buildsystem":"simple",
-         "build-commands":[
-            "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} pillow pylast dbus-python flask hsaudiotag3k pysdl2 stagger send2trash pylyrics plexapi"
-         ],
-         "sources":[
-            {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/c1/3b/05414f6c406d571604a6ee19530ba0a0bd35a8c2cae158ffac0caaa74179/pylast-3.1.0.tar.gz",
-            "sha256": "7eb58682beccc0052c3284aba64a9a6454b5e89706f789ebeb2403dc1045606a"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/dd/bf/4138e7bfb757de47d1f4b6994648ec67a51efe58fa907c1e11e350cddfca/six-1.12.0.tar.gz",
-               "sha256":"d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/55/54/3ce77783acba5979ce16674fc98b1920d00b01d337cfaaf5db22543505ed/certifi-2018.11.29.tar.gz",
-               "sha256":"47f9c83ef4c0c621eaef743f133f09fa8a74a9b75f037e8624f83bd1b6626cb7"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/b1/53/37d82ab391393565f2f831b8eedbffd57db5a718216f82f1a8b4d381a1c1/urllib3-1.24.1.tar.gz",
-               "sha256":"de9529817c93f27c8ccbfead6985011db27bd0ddfcdb2d86f3f663385c6a9c22"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/ad/13/eb56951b6f7950cadb579ca166e448ba77f9d24efc03edd7e55fa57d04b7/idna-2.8.tar.gz",
-               "sha256":"c357b3f628cf53ae2c4c05627ecc484553142ca23264e593d327bcde5e9c3407"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-3.0.4.tar.gz",
-               "sha256":"84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/0c/52/e9088bb9b96e2d39fc3b33fcda5b4fde9d71473536ac660a1ca9a0958a2f/soupsieve-1.8.tar.gz",
-               "sha256":"eaed742b48b1f3e2d45ba6f79401b2ed5dc33b2123dfe216adb90d4bfa0ade26"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/ac/7e/1b4c2e05809a4414ebce0892fe1e32c14ace86ca7d50c70f00979ca9b3a3/MarkupSafe-1.1.0.tar.gz",
-               "sha256":"4e97332c9ce444b0c2c38dd22ddc61c743eb208d916e4265a2a3b575bdccb1d3"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/35/d4/14e446a82bc9172d088ebd81c0b02c5ca8481bfeecb13c9ef07998f9249b/websocket_client-0.54.0.tar.gz",
-               "sha256":"e51562c91ddb8148e791f0155fdb01325d99bb52c4cdbb291aee7a3563fd0849"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/80/9b/f3036a9a11c250eb51d38acf94d1d7c33a0d4da8a8931bfdf15e12d505b1/tqdm-4.31.1.tar.gz",
-               "sha256":"e22977e3ebe961f72362f6ddfb9197cc531c9737aaf5f607ef09740c849ecd05"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/52/2c/514e4ac25da2b08ca5a464c50463682126385c4272c18193876e91f4bc38/requests-2.21.0.tar.gz",
-               "sha256":"502a824f31acdacb3a35b6690b5fbf0bc41d63a24a45c4004352b0242707598e"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/80/f2/f6aca7f1b209bb9a7ef069d68813b091c8c3620642b568dac4eb0e507748/beautifulsoup4-4.7.1.tar.gz",
-               "sha256":"945065979fb8529dd2f37dbb58f00b661bdbcbebf954f93b32fdf5263ef35348"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/f8/5c/f60e9d8a1e77005f664b76ff8aeaee5bc05d0a91798afd7f53fc998dbc47/Click-7.0.tar.gz",
-               "sha256":"5b94b49521f6456670fdb30cd82a4eca9412788a93fa6dd6df72c94d5a8ff2d7"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/68/1a/f27de07a8a304ad5fa817bbe383d1238ac4396da447fa11ed937039fa04b/itsdangerous-1.1.0.tar.gz",
-               "sha256":"321b033d07f2a4136d3ec762eac9f16a10ccd60f53c0c91af90217ace7ba1f19"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/56/e6/332789f295cf22308386cf5bbd1f4e00ed11484299c5d7383378cf48ba47/Jinja2-2.10.tar.gz",
-               "sha256":"f84be1bb0040caca4cea721fcbbbbd61f9be9464ca236387158b0feea01914a4"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/9f/08/a3bb1c045ec602dc680906fc0261c267bed6b3bb4609430aff92c3888ec8/Werkzeug-0.14.1.tar.gz",
-               "sha256":"c3fd7a7d41976d9f44db327260e263132466836cef6f91512889ed60ad26557c"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/f5/41/134162e767252aa3b27be33263e57fc6fedf0c6516ad550a7b509b38e16e/PlexAPI-3.1.0.tar.gz",
-               "sha256":"4044876f354b6b93737f704e41910c5a5537e000ad9d4dc79b4ded7bc9e9ce4d"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/9d/74/8e92322cb1425739849eb719c3b5d8ca05a6b1f027829fd56b4db7c4b7c7/PyLyrics-1.1.0.zip",
-               "sha256":"c5f36e8ef0ed3b487a9242ce34c19f9684e418a5bbffd5d367dc1d1604b4cd0b"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/13/2e/ea40de0304bb1dc4eb309de90aeec39871b9b7c4bd30f1a3cdcb3496f5c0/Send2Trash-1.5.0.tar.gz",
-               "sha256":"60001cc07d707fe247c94f74ca6ac0d3255aabcb930529690897ca2a39db28b2"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/c9/a4/02fd8648d409824239de9faa40742a33606942fb7e329c10e50534b7ebbb/stagger-1.0.0.tar.gz",
-               "sha256":"a587189ac654dfda469bce753732e534494f009895183ac52ad71b3af20920bc"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/eb/08/8a81128ff6ca89019de9771425638bc197a28f40c1e377f03626baa5d729/PySDL2-0.9.6.tar.gz",
-               "sha256":"b52acab5493a77b08c2afee1f385769fc2005f17cfeaf1886eff22dc78da2123"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/6f/f3/78d4323a6b30d117ad20638606674c1220b2e415d2b95beeb50fb049bd62/hsaudiotag3k-1.1.3.tar.gz",
-               "sha256":"a36b9607725881713d40838fd72b9becb6e940d8fd1c08eb12d92f924a99652f"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/4b/12/c1fbf4971fda0e4de05565694c9f0c92646223cff53f15b6eb248a310a62/Flask-1.0.2.tar.gz",
-               "sha256":"2271c0070dbcb5275fad4a82e29f23ab92682dc45f9dfbc22c02ba9b9322ce48"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/3f/e7/4edb582d1ffd5ac3c84188deea32e960b5c8c0fe1da56ce70224f85ce542/dbus-python-1.2.8.tar.gz",
-               "sha256":"abf12bbb765e300bf8e2a1b2f32f85949eab06998dbda127952c31cb63957b6f"
-            },
-            {
-               "type":"file",
-               "url":"https://files.pythonhosted.org/packages/3c/7e/443be24431324bd34d22dd9d11cc845d995bcd3b500676bcf23142756975/Pillow-5.4.1.tar.gz",
-               "sha256":"5233664eadfa342c639b9b9977190d64ad7aca4edc51a966394d7e08e7f38a9f"
-            }
-         ]
+          "name": "python-deps",
+          "buildsystem": "simple",
+          "build-commands": [
+              "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} pillow pylast dbus-python flask hsaudiotag3k pysdl2 stagger send2trash pylyrics plexapi musicbrainzngs discogs_client"
+          ],
+          "sources": [
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/06/b8/d1ea38513c22e8c906275d135818fee16ad8495985956a9b7e2bb21942a1/certifi-2019.3.9.tar.gz",
+                  "sha256": "b26104d6835d1f5e49452a26eb2ff87fe7090b89dfcaee5ea2212697e1e1d7ae"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/9a/8b/ea6d2beb2da6e331e9857d0a60b79ed4f72dcbc4e2c7f2d2521b0480fda2/urllib3-1.25.2.tar.gz",
+                  "sha256": "a53063d8b9210a7bdec15e7b272776b9d42b2fd6816401a0d43006ad2f9902db"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/ad/13/eb56951b6f7950cadb579ca166e448ba77f9d24efc03edd7e55fa57d04b7/idna-2.8.tar.gz",
+                  "sha256": "c357b3f628cf53ae2c4c05627ecc484553142ca23264e593d327bcde5e9c3407"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-3.0.4.tar.gz",
+                  "sha256": "84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/fb/9e/2e236603b058daa6820193d4d95f4dcfbbbd0d3c709bec8c6ef1b1902501/soupsieve-1.9.1.tar.gz",
+                  "sha256": "b20eff5e564529711544066d7dc0f7661df41232ae263619dede5059799cdfca"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/b9/2e/64db92e53b86efccfaea71321f597fa2e1b2bd3853d8ce658568f7a13094/MarkupSafe-1.1.1.tar.gz",
+                  "sha256": "29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/ec/90/882f43232719f2ebfbdbe8b7c57fc9642a25b3df30cb70a3701ea22622de/oauthlib-3.0.1.tar.gz",
+                  "sha256": "0ce32c5d989a1827e3f1148f98b9085ed2370fc939bf524c9c851d8714797298"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/dd/bf/4138e7bfb757de47d1f4b6994648ec67a51efe58fa907c1e11e350cddfca/six-1.12.0.tar.gz",
+                  "sha256": "d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/c5/01/8c9c7de6c46f88e70b5a3276c791a2be82ae83d8e0d0cc030525ee2866fd/websocket_client-0.56.0.tar.gz",
+                  "sha256": "1fd5520878b68b84b5748bb30e592b10d0a91529d5383f74f4964e72b297fd3a"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/36/64/071ce46cbb8cd02e5fa88cc6abf31e51724db858a5ffb3f56dc1c6311f3a/tqdm-4.32.1.tar.gz",
+                  "sha256": "0a860bf2683fdbb4812fe539a6c22ea3f1777843ea985cb8c3807db448a0f7ab"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/01/62/ddcf76d1d19885e8579acb1b1df26a852b03472c0e46d2b959a714c90608/requests-2.22.0.tar.gz",
+                  "sha256": "11e007a8a2aa0323f5a921e9e6a2d7e4e67d9877e85773fba9ba6419025cbeb4"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/80/f2/f6aca7f1b209bb9a7ef069d68813b091c8c3620642b568dac4eb0e507748/beautifulsoup4-4.7.1.tar.gz",
+                  "sha256": "945065979fb8529dd2f37dbb58f00b661bdbcbebf954f93b32fdf5263ef35348"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/f8/5c/f60e9d8a1e77005f664b76ff8aeaee5bc05d0a91798afd7f53fc998dbc47/Click-7.0.tar.gz",
+                  "sha256": "5b94b49521f6456670fdb30cd82a4eca9412788a93fa6dd6df72c94d5a8ff2d7"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/68/1a/f27de07a8a304ad5fa817bbe383d1238ac4396da447fa11ed937039fa04b/itsdangerous-1.1.0.tar.gz",
+                  "sha256": "321b033d07f2a4136d3ec762eac9f16a10ccd60f53c0c91af90217ace7ba1f19"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/93/ea/d884a06f8c7f9b7afbc8138b762e80479fb17aedbbe2b06515a12de9378d/Jinja2-2.10.1.tar.gz",
+                  "sha256": "065c4f02ebe7f7cf559e49ee5a95fb800a9e4528727aec6f24402a5374c65013"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/59/2d/b24bab64b409e22f026fee6705b035cb0698399a7b69449c49442b30af47/Werkzeug-0.15.4.tar.gz",
+                  "sha256": "a0b915f0815982fb2a09161cb8f31708052d0951c3ba433ccc5e1aa276507ca6"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/80/73/4f2e9180b9b2d2033d11c343f4d475452bed2512174c8691289e42d4720c/discogs-client-2.2.2.tar.gz",
+                  "sha256": "aeae43fb9281e27c580d1bcd484e6c309f4f3a05af3908016ee3363786ef43d8"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/63/cc/67ad422295750e2b9ee57c27370dc85d5b85af2454afe7077df6b93d5938/musicbrainzngs-0.6.tar.gz",
+                  "sha256": "28ef261a421dffde0a25281dab1ab214e1b407eec568cd05a53e73256f56adb5"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/f5/41/134162e767252aa3b27be33263e57fc6fedf0c6516ad550a7b509b38e16e/PlexAPI-3.1.0.tar.gz",
+                  "sha256": "4044876f354b6b93737f704e41910c5a5537e000ad9d4dc79b4ded7bc9e9ce4d"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/9d/74/8e92322cb1425739849eb719c3b5d8ca05a6b1f027829fd56b4db7c4b7c7/PyLyrics-1.1.0.zip",
+                  "sha256": "c5f36e8ef0ed3b487a9242ce34c19f9684e418a5bbffd5d367dc1d1604b4cd0b"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/13/2e/ea40de0304bb1dc4eb309de90aeec39871b9b7c4bd30f1a3cdcb3496f5c0/Send2Trash-1.5.0.tar.gz",
+                  "sha256": "60001cc07d707fe247c94f74ca6ac0d3255aabcb930529690897ca2a39db28b2"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/c9/a4/02fd8648d409824239de9faa40742a33606942fb7e329c10e50534b7ebbb/stagger-1.0.0.tar.gz",
+                  "sha256": "a587189ac654dfda469bce753732e534494f009895183ac52ad71b3af20920bc"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/eb/08/8a81128ff6ca89019de9771425638bc197a28f40c1e377f03626baa5d729/PySDL2-0.9.6.tar.gz",
+                  "sha256": "b52acab5493a77b08c2afee1f385769fc2005f17cfeaf1886eff22dc78da2123"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/6f/f3/78d4323a6b30d117ad20638606674c1220b2e415d2b95beeb50fb049bd62/hsaudiotag3k-1.1.3.tar.gz",
+                  "sha256": "a36b9607725881713d40838fd72b9becb6e940d8fd1c08eb12d92f924a99652f"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/e9/96/8f6d83828a77306a119e12b215a7b0637c955b408fb1c161311a6891b958/Flask-1.0.3.tar.gz",
+                  "sha256": "ad7c6d841e64296b962296c2c2dabc6543752985727af86a975072dea984b6f3"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/3f/e7/4edb582d1ffd5ac3c84188deea32e960b5c8c0fe1da56ce70224f85ce542/dbus-python-1.2.8.tar.gz",
+                  "sha256": "abf12bbb765e300bf8e2a1b2f32f85949eab06998dbda127952c31cb63957b6f"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/c1/3b/05414f6c406d571604a6ee19530ba0a0bd35a8c2cae158ffac0caaa74179/pylast-3.1.0.tar.gz",
+                  "sha256": "7eb58682beccc0052c3284aba64a9a6454b5e89706f789ebeb2403dc1045606a"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/81/1a/6b2971adc1bca55b9a53ed1efa372acff7e8b9913982a396f3fa046efaf8/Pillow-6.0.0.tar.gz",
+                  "sha256": "809c0a2ce9032cbcd7b5313f71af4bdc5c8c771cb86eb7559afd954cab82ebb5"
+              }
+          ]
       }
    ]
 }
