@@ -163,7 +163,7 @@
           "name": "python-deps",
           "buildsystem": "simple",
           "build-commands": [
-              "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} pillow pylast dbus-python flask hsaudiotag3k pysdl2 stagger send2trash pylyrics plexapi musicbrainzngs discogs_client"
+              "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} pillow pylast dbus-python flask hsaudiotag3k pysdl2 stagger send2trash pylyrics plexapi musicbrainzngs discogs_client pypresence"
           ],
           "sources": [
               {
@@ -173,8 +173,8 @@
               },
               {
                   "type": "file",
-                  "url": "https://files.pythonhosted.org/packages/9a/8b/ea6d2beb2da6e331e9857d0a60b79ed4f72dcbc4e2c7f2d2521b0480fda2/urllib3-1.25.2.tar.gz",
-                  "sha256": "a53063d8b9210a7bdec15e7b272776b9d42b2fd6816401a0d43006ad2f9902db"
+                  "url": "https://files.pythonhosted.org/packages/4c/13/2386233f7ee40aa8444b47f7463338f3cbdf00c316627558784e3f542f07/urllib3-1.25.3.tar.gz",
+                  "sha256": "dbe59173209418ae49d485b87d1681aefa36252ee85884c31346debd19463232"
               },
               {
                   "type": "file",
@@ -245,6 +245,11 @@
                   "type": "file",
                   "url": "https://files.pythonhosted.org/packages/59/2d/b24bab64b409e22f026fee6705b035cb0698399a7b69449c49442b30af47/Werkzeug-0.15.4.tar.gz",
                   "sha256": "a0b915f0815982fb2a09161cb8f31708052d0951c3ba433ccc5e1aa276507ca6"
+              },
+              {
+                  "type": "file",
+                  "url": "https://files.pythonhosted.org/packages/19/15/1396287b34adc61441bfb5bd253f0f302b65182e6936630e0de35910fc38/pypresence-3.3.2.tar.gz",
+                  "sha256": "d39f8eb79c521ae2f3dd8e2dbfa204d7df4201f044b68bcae6339c75b87dfb7b"
               },
               {
                   "type": "file",
