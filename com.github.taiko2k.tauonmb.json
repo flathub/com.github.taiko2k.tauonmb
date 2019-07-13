@@ -13,7 +13,7 @@
       "--device=dri",
       "--filesystem=xdg-music",
       "--filesystem=xdg-download",
-      "--filesystem=xdg-run/discord:create",
+      "--filesystem=xdg-run/app/com.discordapp.Discord:create",
       "--filesystem=~/.config/fontconfig/:ro",
       "--talk-name=org.freedesktop.Notifications",
       "--own-name=org.mpris.MediaPlayer2.tauon"
