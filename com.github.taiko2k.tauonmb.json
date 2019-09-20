@@ -1,7 +1,7 @@
 {
    "app-id":"com.github.taiko2k.tauonmb",
    "runtime":"org.gnome.Platform",
-   "runtime-version":"3.32",
+   "runtime-version":"3.34",
    "sdk":"org.gnome.Sdk",
    "command":"com.github.taiko2k.tauonmb.sh",
    "finish-args":[
@@ -24,6 +24,9 @@
          "name":"tauonmb-git",
          "buildsystem":"simple",
          "build-commands":[
+            "python3 compile-translations.py",
+            "mkdir -p /app/share/locale",
+            "mv locale /app/share/",
             "mkdir /app/bin",
             "cp -r * /app/bin/",
             "mkdir -p /app/share/icons/hicolor/scalable/apps",
@@ -39,7 +42,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"9d68e1531c254028a808a553dc93a4c4672e1d09"
+               "commit":"e6ceaad690002790a87f8af9fd6af4d67090279b"
             }
          ]
       },
@@ -71,7 +74,8 @@
                 "--enable-libopus"
             ],
             "cleanup": [
-                "/share/ffmpeg/examples"
+                "/share/ffmpeg/examples",
+                "/include"
             ],
             "sources": [
                 {
