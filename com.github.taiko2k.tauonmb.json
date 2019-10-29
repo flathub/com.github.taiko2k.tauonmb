@@ -109,7 +109,8 @@
             "mkdir -p /app/share/fonts",
             "install -D NotoSans-Bold.ttf /app/share/fonts/",
             "install -D NotoSans-Medium.ttf /app/share/fonts/",
-            "install -D NotoSans-Regular.ttf /app/share/fonts/"
+            "install -D NotoSans-Regular.ttf /app/share/fonts/",
+            "install -D NotoSans-ExtraCondensed.ttf /app/share/fonts/"
          ],
          "sources":[
             {
