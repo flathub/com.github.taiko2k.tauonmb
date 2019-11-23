@@ -43,7 +43,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"3bde2cd04f4871be0c7a7a8e6ce3a6e55bcbb331"
+               "commit":"45e6cdabc9f76e1eea83110ffdf12fceef90a683"
             }
          ]
       },
@@ -127,7 +127,8 @@
             "install -D NotoSans-Bold.ttf /app/share/fonts/",
             "install -D NotoSans-Medium.ttf /app/share/fonts/",
             "install -D NotoSans-Regular.ttf /app/share/fonts/",
-            "install -D NotoSans-ExtraCondensed.ttf /app/share/fonts/"
+            "install -D NotoSans-ExtraCondensed.ttf /app/share/fonts/",
+            "install -D NotoSans-ExtraCondensedBold.ttf /app/share/fonts/"
          ],
          "sources":[
             {
