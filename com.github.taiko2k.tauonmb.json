@@ -43,7 +43,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"e96a5c71df83cd5cdb150784837609acc68b4de1"
+               "commit":"f69665bb0a67687e3568e64847556c588c5621ec"
             }
          ]
       },
@@ -109,7 +109,7 @@
          "build-commands":[
             "python3 setup.py build",
             "mkdir /app/bin/cairo",
-            "install -D build/lib.linux-x86_64*/cairo/* /app/bin/cairo/"
+            "install -D build/lib.linux-*/cairo/* /app/bin/cairo/"
          ],
          "sources":[
             {
