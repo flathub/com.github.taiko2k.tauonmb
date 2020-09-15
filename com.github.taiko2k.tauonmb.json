@@ -21,9 +21,21 @@
    ],
    "modules":[
       {
+         "name": "opusfile",
+         "config-opts": [ "--disable-doc", "--disable-examples" ],
+         "sources": [
+            {
+              "type": "archive",
+              "url": "https://ftp.osuosl.org/pub/xiph/releases/opus/opusfile-0.12.tar.gz",
+              "sha256": "118d8601c12dd6a44f52423e68ca9083cc9f2bfe72da7a8c1acb22a80ae3550b"
+            }
+         ]
+      },
+      {
          "name":"tauonmb-git",
          "buildsystem":"simple",
          "build-commands":[
+            "bash compile-phazor.sh",
             "python3 compile-translations.py",
             "mkdir -p /app/share/locale",
             "mv locale /app/share/",
@@ -43,7 +55,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"1ea36f535eb307aa36464269aae9636436b833ff"
+               "commit":"22f03b91a2793cc12c4b593267d4ae484279d464"
             }
          ]
       },
