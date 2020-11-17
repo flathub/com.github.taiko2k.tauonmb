@@ -16,10 +16,15 @@
       "--filesystem=xdg-run/app/com.discordapp.Discord:create",
       "--filesystem=~/.config/fontconfig/:ro",
       "--talk-name=org.freedesktop.Notifications",
+      "--talk-name=org.kde.StatusNotifierWatcher",
       "--own-name=org.mpris.MediaPlayer2.tauon"
       
    ],
    "modules":[
+     "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
+     {
+    "name": "foo"
+     },
       {
          "name": "opusfile",
          "config-opts": [ "--disable-doc", "--disable-examples" ],
@@ -39,7 +44,7 @@
             "python3 compile-translations.py",
             "mkdir -p /app/share/locale",
             "mv locale /app/share/",
-            "mkdir /app/bin",
+            "mkdir -p /app/bin",
             "cp -r * /app/bin/",
             "mkdir -p /app/share/icons/hicolor/scalable/apps",
             "mkdir -p /app/share/icons/hicolor/symbolic/apps",
@@ -55,7 +60,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"824f3b6af6a43cd7bf6e473ba3516d4d19c62b0f"
+               "commit":"0ebdd7a88fd4f700df05a68297789dcc48146703"
             }
          ]
       },
