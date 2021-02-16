@@ -26,6 +26,17 @@
     "name": "foo"
      },
       {
+         "name": "libopenmpt",
+         "config-opts": ["--without-portaudio", "--disable-examples" ],
+         "sources": [
+            {
+              "type": "archive",
+              "url": "https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.5.5+release.autotools.tar.gz",
+              "sha256": "f1e01483ebf1a680d9ec030c9af20f5f2a5ac0f1e0642c18bd5593cfaa9ceb6b"
+            }
+         ]
+      },
+      {
          "name": "opusfile",
          "config-opts": [ "--disable-doc", "--disable-examples" ],
          "sources": [
@@ -60,7 +71,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"1c89e2edc0d95db6f5716b2e50c50b6e5973290a"
+               "commit":"e5f5e19a1326eacd08c01308fce5d5ba59d6e5c1"
             }
          ]
       },
