@@ -34,6 +34,11 @@
               "url": "https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.5.5+release.autotools.tar.gz",
               "sha256": "f1e01483ebf1a680d9ec030c9af20f5f2a5ac0f1e0642c18bd5593cfaa9ceb6b"
             }
+         ],
+         "cleanup": [
+              "*.la",
+              "*.a",
+              "/include"
          ]
       },
       {
@@ -45,7 +50,12 @@
               "url": "https://ftp.osuosl.org/pub/xiph/releases/opus/opusfile-0.12.tar.gz",
               "sha256": "118d8601c12dd6a44f52423e68ca9083cc9f2bfe72da7a8c1acb22a80ae3550b"
             }
-         ]
+         ],
+        "cleanup": [
+              "*.la",
+              "*.a",
+              "/include"
+            ]
       },
       {
          "name":"tauonmb-git",
