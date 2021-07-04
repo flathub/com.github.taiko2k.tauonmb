@@ -1,7 +1,7 @@
 {
    "app-id":"com.github.taiko2k.tauonmb",
    "runtime":"org.gnome.Platform",
-   "runtime-version":"3.38",
+   "runtime-version":"40",
    "sdk":"org.gnome.Sdk",
    "command":"com.github.taiko2k.tauonmb.sh",
    "finish-args":[
@@ -14,7 +14,6 @@
       "--filesystem=xdg-music",
       "--filesystem=xdg-download",
       "--filesystem=xdg-run/app/com.discordapp.Discord:create",
-      "--filesystem=~/.config/fontconfig/:ro",
       "--system-talk-name=org.freedesktop.login1",
       "--talk-name=org.freedesktop.Notifications",
       "--talk-name=org.kde.StatusNotifierWatcher",
@@ -82,7 +81,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"f1a2ac5a1fae6fa72ae58260cc3882543cbd9f59"
+               "commit":"368824957b1c6ea10ba77c9af0d5484e2d5a4c18"
             }
          ]
       },
@@ -174,51 +173,6 @@
                "type":"archive",
                "url":"https://noto-website-2.storage.googleapis.com/pkgs/NotoSans-hinted.zip",
                "sha256":"02e5f834c526f815f3b9f90f98e2b5b09f17cec107cc751c3b58fc3a2c0b2942"
-            }
-         ]
-      },
-      {
-         "name":"noto-font-cjk-regular",
-         "buildsystem":"simple",
-         "build-commands":[
-            "mkdir -p /app/share/fonts",
-            "install -D NotoSansCJK-Regular.ttc /app/share/fonts/"
-         ],
-         "sources":[
-            {
-               "type":"archive",
-               "url":"https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJK-Regular.ttc.zip",
-               "sha256":"32d03afb0b1109fa75a96f89dfc118015283a5343f2216ee4b3757c19992f75d"
-            }
-         ]
-      },
-      {
-         "name":"noto-font-cjk-bold",
-         "buildsystem":"simple",
-         "build-commands":[
-            "mkdir -p /app/share/fonts",
-            "install -D NotoSansCJK-Bold.ttc /app/share/fonts/"
-         ],
-         "sources":[
-            {
-               "type":"archive",
-               "url":"https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJK-Bold.ttc.zip",
-               "sha256":"3cd895bce6765903b2eefcd90eea6ed372364e66d5b896ea3a594bd3e737eba0"
-            }
-         ]
-      },
-      {
-         "name":"noto-font-cjk-medium",
-         "buildsystem":"simple",
-         "build-commands":[
-            "mkdir -p /app/share/fonts",
-            "install -D NotoSansCJK-Medium.ttc /app/share/fonts/"
-         ],
-         "sources":[
-            {
-               "type":"archive",
-               "url":"https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJK-Medium.ttc.zip",
-               "sha256":"d7590637168e1cff4fd3a15422e483308d7ba2a7120ccaf96ead274c3b40e1b3"
             }
          ]
       },
