@@ -1,7 +1,7 @@
 {
    "app-id":"com.github.taiko2k.tauonmb",
    "runtime":"org.gnome.Platform",
-   "runtime-version":"40",
+   "runtime-version":"41",
    "sdk":"org.gnome.Sdk",
    "command":"com.github.taiko2k.tauonmb.sh",
    "finish-args":[
@@ -81,7 +81,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"7c3c9f53cfafc69b2d8f9902bf8444fd2248611f"
+               "commit":"14bee25622a8c63cf0d0b44914bba5d2089e9e25"
             }
          ]
       },
@@ -518,6 +518,20 @@
                  }
              ]
         },
+{
+    "name": "python3-natsort",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"natsort\" --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/06/73/132e1986f7d37826e39825097e09f2c86b1339609926210ebdaec74a3b72/natsort-7.1.1.tar.gz",
+            "sha256": "00c603a42365830c4722a2eb7663a25919551217ec09a243d3399fa8dd4ac403"
+        }
+    ]
+},
 {
     "name": "python3-tekore",
     "buildsystem": "simple",
