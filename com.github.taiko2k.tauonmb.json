@@ -22,7 +22,7 @@
    ],
    "modules":[
      "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
-     "pypi-dependencies.json",
+     "python3-modules.json",
      {
     "name": "foo"
      },
