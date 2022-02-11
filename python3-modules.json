@@ -197,13 +197,13 @@
             "name": "python3-pypresence",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pypresence\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pypresence==4.0.0\" --no-build-isolation"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/c4/bf/8f56ebae9775a922774293f05235323b0c359dda5f07d6e81b726d6269b2/pypresence-4.2.1-py2.py3-none-any.whl",
-                    "sha256": "12197b5f51c21e3e555b17f85d3e55023f4ad83b6fff72cd6387659ffd484a02"
+                    "url": "https://files.pythonhosted.org/packages/ee/41/5a5437bad7c89faade30115f90689a734d77857634962ffa569ef0b209fe/pypresence-4.0.0.tar.gz",
+                    "sha256": "8eed4871d25f5c6bf52710bf2a9fe18601dc58c74726917e87c685de2e9151d9"
                 }
             ]
         },
