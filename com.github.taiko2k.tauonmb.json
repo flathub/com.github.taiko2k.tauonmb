@@ -1,9 +1,20 @@
 {
    "app-id":"com.github.taiko2k.tauonmb",
    "runtime":"org.gnome.Platform",
-   "runtime-version":"41",
+   "runtime-version":"42",
    "sdk":"org.gnome.Sdk",
    "command":"com.github.taiko2k.tauonmb.sh",
+      "add-extensions": {
+      "org.freedesktop.Platform.ffmpeg-full": {
+          "version": "21.08",
+          "directory": "lib/ffmpeg",
+          "add-ld-path": ".",
+          "autodelete": false,
+          "autodownload": false,
+          "no-autodownload": true
+          }
+       },
+   "cleanup-commands": ["mkdir -p ${FLATPAK_DEST}/lib/ffmpeg"],
    "finish-args":[
       "--share=ipc",
       "--share=network",
@@ -41,6 +52,23 @@
               "*.a",
               "/include"
          ]
+      },
+      {
+         "name": "wavpack",
+         "sources": [
+            {
+              "type": "archive",
+              "url": "https://www.wavpack.com/wavpack-5.4.0.tar.bz2",
+              "sha256": "0716a6dcf9a72d61005e1b09bbbd61aaf49837cb4e4a351992a6daed16cac034"
+            }
+         ],
+        "cleanup": [
+              "*.la",
+              "*.a",
+              "/include",
+              "/bin",
+              "/share/man"
+            ]
       },
       {
          "name": "opusfile",
@@ -82,66 +110,11 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"19f79c3bc56d1de511ebf5cb55d3e0de2424d817"
+               "commit":"1f905c5ee037d2caafec90eabe232e9a40bef9cd"
             }
          ]
       },
-      {
-            "name": "gst-libav",
-            "config-opts": [
-              "--disable-gtk-doc",
-              "--disable-gpl"
-            ],
-            "cleanup": [
-              "*.la",
-              "/share/gtk-doc"
-            ],
-            "sources": [{
-              "type": "archive",
-              "url": "https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.14.4.tar.xz",
-              "sha256": "dfd78591901df7853eab7e56a86c34a1b03635da0d3d56b89aa577f1897865da"
-            }]
-        },
-        {
-            "name": "gst-plugins-ugly",
-            "config-opts": [
-              "--disable-gtk-doc"
-            ],
-            "cleanup": [
-              "*.la",
-              "/share/gtk-doc"
-            ],
-            "sources": [{
-              "type": "archive",
-              "url": "https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.14.4.tar.xz",
-              "sha256": "ac02d837f166c35ff6ce0738e281680d0b90052cfb1f0255dcf6aaca5f0f6d23"
-            }]
-      },
-      {
-            "name": "ffmpeg",
-            "config-opts": [
-                "--enable-rpath",
-                "--disable-static",
-                "--enable-shared",
-                "--disable-doc",
-                "--disable-ffplay",
-                "--disable-ffprobe",
-                "--enable-libmp3lame",
-                "--enable-libvorbis",
-                "--enable-libopus"
-            ],
-            "cleanup": [
-                "/share/ffmpeg/examples",
-                "/include"
-            ],
-            "sources": [
-                {
-                "type": "archive",
-                "url": "https://ffmpeg.org/releases/ffmpeg-4.1.1.tar.xz",
-                "sha256": "373749824dfd334d84e55dff406729edfd1606575ee44dd485d97d45ea4d2d86"
-                }
-            ]
-      },
+
       {
          "name":"python-cairo",
          "buildsystem":"simple",

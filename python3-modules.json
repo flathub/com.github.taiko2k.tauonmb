@@ -12,8 +12,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/03/a3/f61a9a7ff7969cdef2a6e0383a346eb327495d20d25a2de5a088dbb543a6/Pillow-9.0.1.tar.gz",
-                    "sha256": "6c8bc8238a7dfdaf7a75f5ec5a663f4173f8c367e5a39f87e720495e1eed75fa"
+                    "url": "https://files.pythonhosted.org/packages/4b/83/090146d7871d90a2643d469c319c1d014e41b315ab5cf0f8b4b6a764ef31/Pillow-9.1.0.tar.gz",
+                    "sha256": "f401ed2bbb155e1ade150ccc63db1a4f6c1909d3d378f7d1235a44e90d75fb97"
                 }
             ]
         },
@@ -40,8 +40,53 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/01/ca/849a8f1aa722f8bb47e910fa018caf84bee1c4414370abd65241a92ebb32/pylast-4.5.0-py3-none-any.whl",
-                    "sha256": "47c3da663002f7fbacb7d561f8724cf007c22ac7c9c310c17ad987415273e7d0"
+                    "url": "https://files.pythonhosted.org/packages/06/b3/24afc8868eba069a7f03650ac750a778862dc34941a4bebeb58706715726/charset_normalizer-2.0.12-py3-none-any.whl",
+                    "sha256": "6881edbebdb17b39b4eaaa821b438bf6eddffb4468cf344f09f89def34a8b1df"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/37/45/946c02767aabb873146011e665728b680884cd8fe70dde973c640e45b775/certifi-2021.10.8-py2.py3-none-any.whl",
+                    "sha256": "d62a0163eb4c2344ac042ab2bdf75399a71a2d8c7d47eac2e2ee91b9d6339569"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/c4/e5/63ca2c4edf4e00657584608bee1001302bbf8c5f569340b78304f2f446cb/rfc3986-1.5.0-py2.py3-none-any.whl",
+                    "sha256": "a86d6e1f5b1dc238b218b012df0aa79409667bb209e58da56d0b94704e712a97"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/04/a2/d918dcd22354d8958fe113e1a3630137e0fc8b44859ade3063982eacd2a4/idna-3.3-py3-none-any.whl",
+                    "sha256": "84d9dd047ffa80596e0f246e2eab0b391788b0503584e8945f2368256d2735ff"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/60/0f/7a0eeea938eaf61074f29fed9717f2010e8d0e0905d36b38d3275a1e4622/h11-0.12.0-py3-none-any.whl",
+                    "sha256": "36a3cb8c0a032f56e2da7084577878a035d3b61d104230d4bd49c0c6b555a9c6"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/52/b0/7b2e028b63d092804b6794595871f936aafa5e9322dcaaad50ebf67445b3/sniffio-1.2.0-py3-none-any.whl",
+                    "sha256": "471b71698eac1c2112a40ce2752bb2f4a4814c22a54a3eed3676bc0f5ca9f663"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/c3/22/4cba7e1b4f45ffbefd2ca817a6800ba1c671c26f288d7705f20289872012/anyio-3.6.1-py3-none-any.whl",
+                    "sha256": "cb29b9c70620506a9a8f87a309591713446953302d7d995344d0d7c6c0c9a7be"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/e7/38/7b76d3d71c462dc936e333b358a3106e7af913e6c8c9dd5a45684fec08cc/httpcore-0.14.7-py3-none-any.whl",
+                    "sha256": "47d772f754359e56dd9d892d9593b6f9870a37aeb8ba51e9a88b09b3d68cfade"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/2f/d3/6a990516a43a522a72da356c4a91c03e09c0cddce8106e7e1215c120011f/httpx-0.22.0-py3-none-any.whl",
+                    "sha256": "e35e83d1d2b9b2a609ef367cc4c1e66fd80b750348b20cc9e19d1952fc2ca3f6"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/f2/f8/3dd4ec48743f1ca72976feaa5b8131b4a4f73ace0b3d85eafc9e5627da1d/pylast-5.0.0-py3-none-any.whl",
+                    "sha256": "3d6269d3c16ec0c26ae47ccffaef4d4ea60fe40355f5170437711f65f19d1f50"
                 }
             ]
         },
@@ -96,8 +141,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/4e/b8/f5a25b22e803f0578e668daa33ba3701bb37858ec80e08a150bd7d2cf1b1/urllib3-1.26.8-py2.py3-none-any.whl",
-                    "sha256": "000ca7f471a233c2251c6c7023ee85305721bfdf18621ebff4fd17a8653427ed"
+                    "url": "https://files.pythonhosted.org/packages/ec/03/062e6444ce4baf1eac17a6a0ebfe36bb1ad05e1df0e20b110de59c278498/urllib3-1.26.9-py2.py3-none-any.whl",
+                    "sha256": "44ece4d53fb1706f667c9bd1c648f5469a2ec925fcf3a776667042d645472c14"
                 },
                 {
                     "type": "file",
@@ -106,8 +151,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/0c/8e/73ef5366e5c04c2410dab1c74493ca9617a56a27a50f11e01aa4fac2a16c/charset_normalizer-2.0.11-py3-none-any.whl",
-                    "sha256": "2842d8f5e82a1f6aa437380934d5e1cd4fcf2003b06fed6940769c164a480a45"
+                    "url": "https://files.pythonhosted.org/packages/06/b3/24afc8868eba069a7f03650ac750a778862dc34941a4bebeb58706715726/charset_normalizer-2.0.12-py3-none-any.whl",
+                    "sha256": "6881edbebdb17b39b4eaaa821b438bf6eddffb4468cf344f09f89def34a8b1df"
                 },
                 {
                     "type": "file",
@@ -130,13 +175,13 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/72/a6/fd01694427f1c3fcadfdc5f1de901b813b9ac756f0806ef470cfed1de281/soupsieve-2.3.1-py3-none-any.whl",
-                    "sha256": "1a3cca2617c6b38c0343ed661b1fa5de5637f257d4fe22bd9f1338010a1efefb"
+                    "url": "https://files.pythonhosted.org/packages/16/e3/4ad79882b92617e3a4a0df1960d6bce08edfb637737ac5c3f3ba29022e25/soupsieve-2.3.2.post1-py3-none-any.whl",
+                    "sha256": "3b2503d3c7084a42b1ebd08116e5f81aadfaea95863628c80a3b774a11b7c759"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/69/bf/f0f194d3379d3f3347478bd267f754fc68c11cbf2fe302a6ab69447b1417/beautifulsoup4-4.10.0-py3-none-any.whl",
-                    "sha256": "9a315ce70049920ea4572a4055bc4bd700c940521d36fc858205ad4fcde149bf"
+                    "url": "https://files.pythonhosted.org/packages/9c/d8/909c4089dbe4ade9f9705f143c9f13f065049a9d5e7d34c828aefdd0a97c/beautifulsoup4-4.11.1-py3-none-any.whl",
+                    "sha256": "58d5c3d29f5a36ffeb94f02f0d786cd53014cf9b3b3951d42e0080d8a9498d30"
                 }
             ]
         },
@@ -149,8 +194,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/4e/b8/f5a25b22e803f0578e668daa33ba3701bb37858ec80e08a150bd7d2cf1b1/urllib3-1.26.8-py2.py3-none-any.whl",
-                    "sha256": "000ca7f471a233c2251c6c7023ee85305721bfdf18621ebff4fd17a8653427ed"
+                    "url": "https://files.pythonhosted.org/packages/ec/03/062e6444ce4baf1eac17a6a0ebfe36bb1ad05e1df0e20b110de59c278498/urllib3-1.26.9-py2.py3-none-any.whl",
+                    "sha256": "44ece4d53fb1706f667c9bd1c648f5469a2ec925fcf3a776667042d645472c14"
                 },
                 {
                     "type": "file",
@@ -159,8 +204,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/0c/8e/73ef5366e5c04c2410dab1c74493ca9617a56a27a50f11e01aa4fac2a16c/charset_normalizer-2.0.11-py3-none-any.whl",
-                    "sha256": "2842d8f5e82a1f6aa437380934d5e1cd4fcf2003b06fed6940769c164a480a45"
+                    "url": "https://files.pythonhosted.org/packages/06/b3/24afc8868eba069a7f03650ac750a778862dc34941a4bebeb58706715726/charset_normalizer-2.0.12-py3-none-any.whl",
+                    "sha256": "6881edbebdb17b39b4eaaa821b438bf6eddffb4468cf344f09f89def34a8b1df"
                 },
                 {
                     "type": "file",
@@ -174,8 +219,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/f3/91/c6fcf7995ecd86f6015a1487305ee2b29b868c5bc97c7caed1a2d0df903a/PlexAPI-4.9.1-py3-none-any.whl",
-                    "sha256": "4989a5a559b5407556e008a19c62ac5c9b81b54145ff0ab9e5c56f334db460c3"
+                    "url": "https://files.pythonhosted.org/packages/df/28/78ca5ad7ab5f3f13dd8179469a2d491fa0e187fe2c809e5ecabe8cbc26bb/PlexAPI-4.10.1-py3-none-any.whl",
+                    "sha256": "10a83dd3e7b58778d90b900315dc553b96dc2a7648a3935c6ece61e14251135b"
                 }
             ]
         },
@@ -197,13 +242,13 @@
             "name": "python3-pypresence",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pypresence==4.0.0\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pypresence\" --no-build-isolation"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ee/41/5a5437bad7c89faade30115f90689a734d77857634962ffa569ef0b209fe/pypresence-4.0.0.tar.gz",
-                    "sha256": "8eed4871d25f5c6bf52710bf2a9fe18601dc58c74726917e87c685de2e9151d9"
+                    "url": "https://files.pythonhosted.org/packages/c4/bf/8f56ebae9775a922774293f05235323b0c359dda5f07d6e81b726d6269b2/pypresence-4.2.1-py2.py3-none-any.whl",
+                    "sha256": "12197b5f51c21e3e555b17f85d3e55023f4ad83b6fff72cd6387659ffd484a02"
                 }
             ]
         },
@@ -230,8 +275,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/a1/7f/a1d4f4c7b66f0fc02f35dc5c85f45a8b4e4a7988357a29e61c14e725ef86/setproctitle-1.2.2.tar.gz",
-                    "sha256": "7dfb472c8852403d34007e01d6e3c68c57eb66433fb8a5c77b13b89a160d97df"
+                    "url": "https://files.pythonhosted.org/packages/78/9a/cf6bf4c472b59aef3f3c0184233eeea8938d3366bcdd93d525261b1b9e0a/setproctitle-1.2.3.tar.gz",
+                    "sha256": "ecf28b1c07a799d76f4326e508157b71aeda07b84b90368ea451c0710dbd32c0"
                 }
             ]
         },
@@ -244,8 +289,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/1b/32/02c56b44469c2ea444b4b4a713045d5613965094049ad4094093e8c27ca9/pulsectl-22.1.3-py2.py3-none-any.whl",
-                    "sha256": "d55ebe79f0c96efb598efc1d9ef35d86d38a3b3d754c1025bce2cd892f629927"
+                    "url": "https://files.pythonhosted.org/packages/e7/dc/53454b4d9f52f53aa5d95b0c5aa1adaf80e324f760e9086db4e2de2dab24/pulsectl-22.3.2-py2.py3-none-any.whl",
+                    "sha256": "6fded96a8e6a9ac6c387ed3a9bdb1afb20d80256b0c9df4b98b58461d74ba0c4"
                 }
             ]
         },
@@ -272,8 +317,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/0c/8e/73ef5366e5c04c2410dab1c74493ca9617a56a27a50f11e01aa4fac2a16c/charset_normalizer-2.0.11-py3-none-any.whl",
-                    "sha256": "2842d8f5e82a1f6aa437380934d5e1cd4fcf2003b06fed6940769c164a480a45"
+                    "url": "https://files.pythonhosted.org/packages/06/b3/24afc8868eba069a7f03650ac750a778862dc34941a4bebeb58706715726/charset_normalizer-2.0.12-py3-none-any.whl",
+                    "sha256": "6881edbebdb17b39b4eaaa821b438bf6eddffb4468cf344f09f89def34a8b1df"
                 },
                 {
                     "type": "file",
@@ -302,8 +347,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/b1/ae/9a8af72d6f0c551943903eefcf93c3a29898fb7b594603c0d70679c199b1/anyio-3.5.0-py3-none-any.whl",
-                    "sha256": "b5fa16c5ff93fa1046f2eeb5bbff2dad4d3514d6cda61d02816dba34fa8c3c2e"
+                    "url": "https://files.pythonhosted.org/packages/c3/22/4cba7e1b4f45ffbefd2ca817a6800ba1c671c26f288d7705f20289872012/anyio-3.6.1-py3-none-any.whl",
+                    "sha256": "cb29b9c70620506a9a8f87a309591713446953302d7d995344d0d7c6c0c9a7be"
                 },
                 {
                     "type": "file",
@@ -312,13 +357,13 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/26/15/f7cf5aafef7cdc268422944bf426d4dd03d0c897a683fc01ea31dc053fa2/httpx-0.21.3-py3-none-any.whl",
-                    "sha256": "df9a0fd43fa79dbab411d83eb1ea6f7a525c96ad92e60c2d7f40388971b25777"
+                    "url": "https://files.pythonhosted.org/packages/2f/d3/6a990516a43a522a72da356c4a91c03e09c0cddce8106e7e1215c120011f/httpx-0.22.0-py3-none-any.whl",
+                    "sha256": "e35e83d1d2b9b2a609ef367cc4c1e66fd80b750348b20cc9e19d1952fc2ca3f6"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/27/fd/54321795109dda6ba1d48acf09fce764828d524cc6a803d08b9fa36ce876/tekore-4.2.0-py3-none-any.whl",
-                    "sha256": "9e9c89fba137a628794445b74f5c5ea1bd325530b612587ad629b67e4dd1f4ec"
+                    "url": "https://files.pythonhosted.org/packages/e1/c6/a4d481c61300d84c83fc0edc7ec293243159aa259012f994a313d0730bda/tekore-4.3.0-py3-none-any.whl",
+                    "sha256": "8872549cede8a8359a7a130c1af80513aca1bfce5d9ea607f1bf3d88951c4c64"
                 }
             ]
         },
@@ -331,8 +376,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/88/03/cd5aa2c97356b7eee484a2b63fe850076ecb82fdeda82979a234b62a9a37/websocket_client-1.2.3-py3-none-any.whl",
-                    "sha256": "2eed4cc58e4d65613ed6114af2f380f7910ff416fc8c46947f6e76b6815f56c0"
+                    "url": "https://files.pythonhosted.org/packages/a1/9e/8ddb04ef21ea3dfe3924b884dc11fa785df662af23e049ec2d62eaba707d/websocket_client-1.3.2-py3-none-any.whl",
+                    "sha256": "722b171be00f2b90e1d4fb2f2b53146a536ca38db1da8ff49c972a4e1365d0ef"
                 }
             ]
         },
@@ -345,8 +390,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/4e/b8/f5a25b22e803f0578e668daa33ba3701bb37858ec80e08a150bd7d2cf1b1/urllib3-1.26.8-py2.py3-none-any.whl",
-                    "sha256": "000ca7f471a233c2251c6c7023ee85305721bfdf18621ebff4fd17a8653427ed"
+                    "url": "https://files.pythonhosted.org/packages/ec/03/062e6444ce4baf1eac17a6a0ebfe36bb1ad05e1df0e20b110de59c278498/urllib3-1.26.9-py2.py3-none-any.whl",
+                    "sha256": "44ece4d53fb1706f667c9bd1c648f5469a2ec925fcf3a776667042d645472c14"
                 },
                 {
                     "type": "file",
@@ -355,8 +400,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/0c/8e/73ef5366e5c04c2410dab1c74493ca9617a56a27a50f11e01aa4fac2a16c/charset_normalizer-2.0.11-py3-none-any.whl",
-                    "sha256": "2842d8f5e82a1f6aa437380934d5e1cd4fcf2003b06fed6940769c164a480a45"
+                    "url": "https://files.pythonhosted.org/packages/06/b3/24afc8868eba069a7f03650ac750a778862dc34941a4bebeb58706715726/charset_normalizer-2.0.12-py3-none-any.whl",
+                    "sha256": "6881edbebdb17b39b4eaaa821b438bf6eddffb4468cf344f09f89def34a8b1df"
                 },
                 {
                     "type": "file",
@@ -375,13 +420,13 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/01/79/3b67afa70a3c612a5ebe66f43bf3ea50974de8c8d4c0bf603fb355096efb/zeroconf-0.38.3-py3-none-any.whl",
-                    "sha256": "3cdd72184881c2d9ba163582cdd133732a3825306f048e58e4eab29f32b95b17"
+                    "url": "https://files.pythonhosted.org/packages/d5/9e/b65de6eca8ebfc5193a0ce61149266d6186ea72375ba4676bc5d49027b58/zeroconf-0.38.6-py3-none-any.whl",
+                    "sha256": "849a8a84d1150468a5524ef167a23bb4587cb0499b0943edb677939510eb173c"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/6c/49/f864b9fd6310d9a15ddae5b37d78dff1df0e2e1da476442fee062c6032b2/protobuf-3.19.4.tar.gz",
-                    "sha256": "9df0c10adf3e83015ced42a9a7bd64e13d06c4cf45c340d2c63020ea04499d0a"
+                    "url": "https://files.pythonhosted.org/packages/19/96/1283259c25bc48a6df98fa096f66fc568b40137b93806ef5ff66a2d166b1/protobuf-3.20.1.tar.gz",
+                    "sha256": "adc31566d027f45efe3f44eeb5b1f329da43891634d61c75a5944e9be6dd42c9"
                 },
                 {
                     "type": "file",
@@ -390,8 +435,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/3f/cf/e748fa28b33502b66ae41436c2d8e869a9177214d045df53f1d78a9ee5a6/PyChromecast-10.2.3-py2.py3-none-any.whl",
-                    "sha256": "e1194f65fabf11a7fe48a27e24b418246357a4cac2ed94e0327fcbd6f1d6f843"
+                    "url": "https://files.pythonhosted.org/packages/ab/f1/168b933ca0689650b7eec2b53191e7893213a2e1c3e47d0f1bedc2ae8979/PyChromecast-12.1.2-py2.py3-none-any.whl",
+                    "sha256": "5917c1f2aa6c011947f22f66cfffb4384e2af7ef44aecefd3028b9db8ce4116e"
                 }
             ]
         }
