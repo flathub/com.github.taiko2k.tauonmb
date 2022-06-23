@@ -1,0 +1,200 @@
+{
+   "app-id":"com.github.taiko2k.tauonmb",
+   "runtime":"org.gnome.Platform",
+   "runtime-version":"42",
+   "sdk":"org.gnome.Sdk",
+   "command":"com.github.taiko2k.tauonmb.sh",
+      "add-extensions": {
+      "org.freedesktop.Platform.ffmpeg-full": {
+          "version": "21.08",
+          "directory": "lib/ffmpeg",
+          "add-ld-path": ".",
+          "autodelete": false,
+          "autodownload": false,
+          "no-autodownload": true
+          }
+       },
+   "cleanup-commands": ["mkdir -p ${FLATPAK_DEST}/lib/ffmpeg"],
+   "finish-args":[
+      "--share=ipc",
+      "--share=network",
+      "--socket=wayland",
+      "--socket=x11",
+      "--socket=pulseaudio",
+      "--device=all",
+      "--filesystem=xdg-music",
+      "--filesystem=xdg-download",
+      "--filesystem=xdg-run/app/com.discordapp.Discord:create",
+      "--system-talk-name=org.freedesktop.login1",
+      "--talk-name=org.freedesktop.Notifications",
+      "--talk-name=org.kde.StatusNotifierWatcher",
+      "--own-name=org.mpris.MediaPlayer2.tauon"
+      
+   ],
+   "modules":[
+     "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
+     "python3-modules.json",
+     {
+    "name": "foo"
+     },
+      {
+         "name": "libopenmpt",
+         "config-opts": ["--without-portaudio", "--disable-examples" ],
+         "sources": [
+            {
+              "type": "archive",
+              "url": "https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.5.5+release.autotools.tar.gz",
+              "sha256": "f1e01483ebf1a680d9ec030c9af20f5f2a5ac0f1e0642c18bd5593cfaa9ceb6b"
+            }
+         ],
+         "cleanup": [
+              "*.la",
+              "*.a",
+              "/include"
+         ]
+      },
+      {
+         "name": "wavpack",
+         "sources": [
+            {
+              "type": "archive",
+              "url": "https://www.wavpack.com/wavpack-5.4.0.tar.bz2",
+              "sha256": "0716a6dcf9a72d61005e1b09bbbd61aaf49837cb4e4a351992a6daed16cac034"
+            }
+         ],
+        "cleanup": [
+              "*.la",
+              "*.a",
+              "/include",
+              "/bin",
+              "/share/man"
+            ]
+      },
+      {
+         "name": "opusfile",
+         "config-opts": [ "--disable-doc", "--disable-examples" ],
+         "sources": [
+            {
+              "type": "archive",
+              "url": "https://ftp.osuosl.org/pub/xiph/releases/opus/opusfile-0.12.tar.gz",
+              "sha256": "118d8601c12dd6a44f52423e68ca9083cc9f2bfe72da7a8c1acb22a80ae3550b"
+            }
+         ],
+        "cleanup": [
+              "*.la",
+              "*.a",
+              "/include"
+            ]
+      },
+      {
+         "name":"tauonmb-git",
+         "buildsystem":"simple",
+         "build-commands":[
+            "bash compile-phazor.sh",
+            "python3 compile-translations.py",
+            "mkdir -p /app/share/locale",
+            "mv locale /app/share/",
+            "mkdir -p /app/bin",
+            "cp -r * /app/bin/",
+            "mkdir -p /app/share/icons/hicolor/scalable/apps",
+            "mkdir -p /app/share/icons/hicolor/symbolic/apps",
+            "install -D extra/tauonmb.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
+            "install -D extra/tauonmb-symbolic.svg /app/share/icons/hicolor/symbolic/apps/${FLATPAK_ID}-symbolic.svg",
+            "install -D assets/icon-64.png /app/share/icons/hicolor/64x64/apps/${FLATPAK_ID}.png",
+            "install -D assets/icon-128.png /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png",
+            "install -D extra/com.github.taiko2k.tauonmb.appdata.xml /app/share/metainfo/${FLATPAK_ID}.appdata.xml",
+            "install -D extra/com.github.taiko2k.tauonmb.desktop /app/share/applications/${FLATPAK_ID}.desktop",
+            "install -D extra/com.github.taiko2k.tauonmb.sh /app/bin/com.github.taiko2k.tauonmb.sh"
+         ],
+         "sources":[
+            {
+               "type":"git",
+               "url":"https://github.com/Taiko2k/TauonMusicBox.git",
+               "commit":"f1e202ed8df6a8ea89433a6575a46ecb1337a603"
+            }
+         ]
+      },
+
+      {
+         "name":"python-cairo",
+         "buildsystem":"simple",
+         "build-commands":[
+            "python3 setup.py build",
+            "mkdir /app/bin/cairo",
+            "install -D build/lib.linux-*/cairo/* /app/bin/cairo/"
+         ],
+         "sources":[
+            {
+               "type":"archive",
+               "url":"https://github.com/pygobject/pycairo/releases/download/v1.19.1/pycairo-1.19.1.tar.gz",
+               "sha256":"2c143183280feb67f5beb4e543fd49990c28e7df427301ede04fc550d3562e84"
+            }
+         ]
+      },
+      {
+         "name":"noto-fonts",
+         "buildsystem":"simple",
+         "build-commands":[
+            "mkdir -p /app/share/fonts",
+            "install -D NotoSans-Bold.ttf /app/share/fonts/",
+            "install -D NotoSans-Medium.ttf /app/share/fonts/",
+            "install -D NotoSans-Regular.ttf /app/share/fonts/",
+            "install -D NotoSans-ExtraCondensed.ttf /app/share/fonts/",
+            "install -D NotoSans-ExtraCondensedBold.ttf /app/share/fonts/"
+         ],
+         "sources":[
+            {
+               "type":"archive",
+               "url":"https://noto-website-2.storage.googleapis.com/pkgs/NotoSans-hinted.zip",
+               "sha256":"02e5f834c526f815f3b9f90f98e2b5b09f17cec107cc751c3b58fc3a2c0b2942"
+            }
+         ]
+      },
+            {
+         "name":"noto-font-cjk-regular",
+         "buildsystem":"simple",
+         "build-commands":[
+            "mkdir -p /app/share/fonts",
+            "install -D NotoSansCJK-Regular.ttc /app/share/fonts/"
+         ],
+         "sources":[
+            {
+               "type":"archive",
+               "url":"https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJK-Regular.ttc.zip",
+               "sha256":"32d03afb0b1109fa75a96f89dfc118015283a5343f2216ee4b3757c19992f75d"
+            }
+         ]
+      },
+      {
+         "name":"noto-font-cjk-bold",
+         "buildsystem":"simple",
+         "build-commands":[
+            "mkdir -p /app/share/fonts",
+            "install -D NotoSansCJK-Bold.ttc /app/share/fonts/"
+         ],
+         "sources":[
+            {
+               "type":"archive",
+               "url":"https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJK-Bold.ttc.zip",
+               "sha256":"3cd895bce6765903b2eefcd90eea6ed372364e66d5b896ea3a594bd3e737eba0"
+            }
+         ]
+      },
+      {
+         "name":"noto-font-cjk-medium",
+         "buildsystem":"simple",
+         "build-commands":[
+            "mkdir -p /app/share/fonts",
+            "install -D NotoSansCJK-Medium.ttc /app/share/fonts/"
+         ],
+         "sources":[
+            {
+               "type":"archive",
+               "url":"https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJK-Medium.ttc.zip",
+               "sha256":"d7590637168e1cff4fd3a15422e483308d7ba2a7120ccaf96ead274c3b40e1b3"
+            }
+         ]
+      }
+
+   ]
+}
