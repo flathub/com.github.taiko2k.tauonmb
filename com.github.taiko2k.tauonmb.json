@@ -9,9 +9,7 @@
           "version": "21.08",
           "directory": "lib/ffmpeg",
           "add-ld-path": ".",
-          "autodelete": false,
-          "autodownload": false,
-          "no-autodownload": true
+          "autodelete": false
           }
        },
    "cleanup-commands": ["mkdir -p ${FLATPAK_DEST}/lib/ffmpeg"],
