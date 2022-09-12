@@ -17,7 +17,7 @@
       "--share=ipc",
       "--share=network",
       "--socket=wayland",
-      "--socket=x11",
+      "--socket=fallback-x11",
       "--socket=pulseaudio",
       "--device=all",
       "--filesystem=xdg-music",
@@ -108,7 +108,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"c86a07ef16d7ed70d340f62022b088232bacbfe3"
+               "commit":"66a645e6812c46da109b03824ebaaaab39c9f4fd"
             }
          ]
       },
