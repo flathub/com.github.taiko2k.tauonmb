@@ -23,6 +23,7 @@
       "--filesystem=xdg-music",
       "--filesystem=xdg-download",
       "--filesystem=xdg-run/app/com.discordapp.Discord:create",
+      "--filesystem=xdg-run/discord-ipc-0",
       "--system-talk-name=org.freedesktop.login1",
       "--talk-name=org.freedesktop.Notifications",
       "--talk-name=org.kde.StatusNotifierWatcher",
@@ -108,7 +109,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"f5e3c7861c45d8b1e43a70881029e882e2eccf34"
+               "commit":"4dc847ce1e34c49b149ea1e8f2688615e233d687"
             }
          ]
       },
