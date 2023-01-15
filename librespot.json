@@ -1,0 +1,27 @@
+{
+    "name": "librespot",
+    "build-options": {
+        "append-path" : "/usr/lib/sdk/rust-stable/bin",
+        "env" : {
+            "CARGO_HOME" : "/run/build/librespot/cargo"
+        }
+    },
+    "buildsystem": "simple",
+    "build-commands": [
+        "cargo --offline fetch --manifest-path Cargo.toml --verbose",
+        "cargo --offline build --release --verbose",
+        "install -Dm755 target/release/librespot /app/bin/"
+    ],
+    "cleanup": [
+        "*.la"
+    ],
+
+    "sources": [
+        "librespot-cargo-sources.json",
+        {
+            "type": "archive",
+            "url": "https://github.com/librespot-org/librespot/archive/refs/tags/v0.4.2.tar.gz",
+            "sha256": "cc8cb81bdbaa5abf366170dec5e6b8c0ecf570a7cb68f04483e9f7eed338ca61"
+        }
+    ]
+}
