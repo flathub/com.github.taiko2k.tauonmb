@@ -1,17 +1,18 @@
 {
    "app-id":"com.github.taiko2k.tauonmb",
    "runtime":"org.gnome.Platform",
-   "runtime-version":"42",
+   "runtime-version":"43",
    "sdk":"org.gnome.Sdk",
+   "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
    "command":"com.github.taiko2k.tauonmb.sh",
-      "add-extensions": {
-      "org.freedesktop.Platform.ffmpeg-full": {
-          "version": "21.08",
-          "directory": "lib/ffmpeg",
-          "add-ld-path": ".",
-          "autodelete": false
-          }
-       },
+   "add-extensions": {
+        "org.freedesktop.Platform.ffmpeg-full": {
+	    "version": "22.08",
+	    "directory": "lib/ffmpeg",
+	    "add-ld-path": ".",
+	    "autodelete": false
+	}
+   },
    "cleanup-commands": ["mkdir -p ${FLATPAK_DEST}/lib/ffmpeg"],
    "finish-args":[
       "--share=ipc",
@@ -33,6 +34,7 @@
    "modules":[
      "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
      "python3-modules.json",
+     "librespot.json",
      {
     "name": "foo"
      },
@@ -42,8 +44,8 @@
          "sources": [
             {
               "type": "archive",
-              "url": "https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.5.5+release.autotools.tar.gz",
-              "sha256": "f1e01483ebf1a680d9ec030c9af20f5f2a5ac0f1e0642c18bd5593cfaa9ceb6b"
+              "url": "https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.6.7+release.autotools.tar.gz",
+              "sha256": "2174ac0f5a148ba684db768a47edf783eff9084fbca5fef6c997501643100163"
             }
          ],
          "cleanup": [
@@ -109,11 +111,10 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"ae9f7acb1e0276d295c01bb60e4f086014d43f5a"
+               "commit":"f24ccaffe0e8d95bc96e7a50c800a55bd9865fb0"
             }
          ]
       },
-
       {
          "name":"python-cairo",
          "buildsystem":"simple",
