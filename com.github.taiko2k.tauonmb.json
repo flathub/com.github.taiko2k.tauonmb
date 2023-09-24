@@ -1,7 +1,7 @@
 {
    "app-id":"com.github.taiko2k.tauonmb",
    "runtime":"org.gnome.Platform",
-   "runtime-version":"44",
+   "runtime-version":"45",
    "sdk":"org.gnome.Sdk",
    "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
    "command":"com.github.taiko2k.tauonmb.sh",
@@ -111,7 +111,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"bda6c1cc0261b240c3cf09e5fcfbc17fa40be630"
+               "commit":"b5ce5f0155ca7525cd8629ddc83b05b6d54d7ab6"
             }
          ]
       },
