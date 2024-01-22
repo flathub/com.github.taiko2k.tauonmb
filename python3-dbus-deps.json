@@ -3,6 +3,30 @@
     "buildsystem": "simple",
     "build-commands": [],
     "modules": [
+		    {
+		    "name": "python3-scikit-build",
+		    "buildsystem": "simple",
+		    "build-commands": [
+			"pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"scikit-build\" --no-build-isolation"
+		    ],
+		    "sources": [
+			{
+			    "type": "file",
+			    "url": "https://files.pythonhosted.org/packages/12/b3/231ffd4ab1fc9d679809f356cebee130ac7daa00d6d6f3206dd4fd137e9e/distro-1.9.0-py3-none-any.whl",
+			    "sha256": "7bffd925d65168f85027d8da9af6bddab658135b840670a223589bc0c8ef02b2"
+			},
+			{
+			    "type": "file",
+			    "url": "https://files.pythonhosted.org/packages/ec/1a/610693ac4ee14fcdf2d9bf3c493370e4f2ef7ae2e19217d7a237ff42367d/packaging-23.2-py3-none-any.whl",
+			    "sha256": "8c491190033a9af7e1d931d0b5dacc2ef47509b34dd0de67ed209b5203fc88c7"
+			},
+			{
+			    "type": "file",
+			    "url": "https://files.pythonhosted.org/packages/fa/af/b3ef8fe0bb96bf7308e1f9d196fc069f0c75d9c74cfaad851e418cc704f4/scikit_build-0.17.6-py3-none-any.whl",
+			    "sha256": "18bd55e81841106eec93f30a297df4f301003791c41be46ef6428d58bd42d6b3"
+			}
+		    ]
+		},
 	    {
 	    "name": "python3-setuptools_scm",
 	    "buildsystem": "simple",
