@@ -33,6 +33,7 @@
    ],
    "modules":[
      "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
+     "python3-tekore-deps.json",
      "python3-dbus-deps.json",
      "python3-modules.json",
      "librespot.json",
