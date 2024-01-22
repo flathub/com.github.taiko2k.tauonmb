@@ -2,6 +2,7 @@
     "name": "python3-maturin",
     "buildsystem": "simple",
     "build-commands": [
+        ". /usr/lib/sdk/rust-stable/enable.sh",
         "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"maturin\" --no-build-isolation"
     ],
     "sources": [
