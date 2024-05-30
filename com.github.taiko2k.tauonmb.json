@@ -88,6 +88,24 @@
             ]
       },
       {
+         "name": "libgme",
+         "buildsystem": "cmake-ninja",
+         "sources": [
+            {
+              "type": "archive",
+              "url": "https://github.com/libgme/game-music-emu/archive/refs/tags/0.6.3.tar.gz",
+              "sha256": "4c5a7614acaea44e5cb1423817d2889deb82674ddbc4e3e1291614304b86fca0"
+            }
+         ],
+        "cleanup": [
+              "*.la",
+              "*.a",
+              "/include",
+              "/bin",
+              "/share/man"
+            ]
+      },
+      {
          "name":"tauonmb-git",
          "buildsystem":"simple",
          "build-commands":[
@@ -111,7 +129,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"827d4ac997c1a6476b2f81071d29935bd57d0575"
+               "commit":"5301e35c74d19b45b9d1cce323efee5d0351ed43"
             }
          ]
       },
