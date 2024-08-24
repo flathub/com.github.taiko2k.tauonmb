@@ -25,6 +25,7 @@
       "--filesystem=xdg-download",
       "--filesystem=xdg-run/app/com.discordapp.Discord:create",
       "--filesystem=xdg-run/discord-ipc-0",
+      "--filesystem=xdg-run/pipewire-0",
       "--system-talk-name=org.freedesktop.login1",
       "--talk-name=org.freedesktop.Notifications",
       "--talk-name=org.kde.StatusNotifierWatcher",
@@ -44,8 +45,8 @@
          "sources": [
             {
               "type": "archive",
-              "url": "https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.6.7+release.autotools.tar.gz",
-              "sha256": "2174ac0f5a148ba684db768a47edf783eff9084fbca5fef6c997501643100163"
+              "url": "https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.7.9+release.autotools.tar.gz",
+              "sha256": "0386e918d75d797e79d5b14edd0847165d8b359e9811ef57652c0a356a2dfcf4"
             }
          ],
          "cleanup": [
@@ -110,6 +111,7 @@
          "buildsystem":"simple",
          "build-commands":[
             "bash compile-phazor.sh",
+            "bash compile-phazor-pipewire.sh",
             "python3 compile-translations.py",
             "mkdir -p /app/share/locale",
             "mv locale /app/share/",
@@ -129,7 +131,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"45cc9e51712ac29b825c18cad10535f1dbdd8923"
+               "commit":"856732917de97e9f62cc4dbdb41ce8f9b4cfbc26"
             }
          ]
       },
