@@ -32,8 +32,14 @@
       "--own-name=org.mpris.MediaPlayer2.tauon"
       
    ],
+   "prepare-commands": [
+       "source /usr/lib/sdk/rust-stable/enable.sh"
+   ],
    "modules":[
      "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
+     "maturin-cargo.json",
+     "python-tekore-deps.json",
+     "python-dbus-deps.json",
      "python3-modules.json",
      "librespot.json",
      {

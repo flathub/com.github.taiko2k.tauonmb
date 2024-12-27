@@ -1,0 +1,20 @@
+these aren't picked up by the flatpak builder pip helper script
+
+
+python3-dbus-python
+ - meson-python
+ - patchelf
+   - setuptools_scm
+   - scikit-build
+   
+python3-pylast
+  - typing_extensions
+  
+python3-tekore
+  - maturin       with      "build-options": {"append-path": "/usr/lib/sdk/rust-stable/bin"},
+    - setuptools_rust
+    
+    
+    
+./flatpak-pip-generator typing_extentions scikit-build setuptools_scm patchelf meson-python
+./flatpak-pip-generator maturin setuptools_rust
