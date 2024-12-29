@@ -112,9 +112,8 @@
          "name":"tauonmb-git",
          "buildsystem":"simple",
          "build-commands":[
-            "bash compile-phazor.sh",
-            "bash compile-phazor-pipewire.sh",
-            "python3 compile-translations.py",
+            "bash run.sh 5",
+            "python3 compile_translations.py",
             "mkdir -p /app/share/locale",
             "mv locale /app/share/",
             "mkdir -p /app/bin",
