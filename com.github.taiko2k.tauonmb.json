@@ -37,7 +37,6 @@
    ],
    "modules":[
      "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
-     "maturin-cargo.json",
      "python-tekore-deps.json",
      "python-dbus-deps.json",
      "python3-modules.json",

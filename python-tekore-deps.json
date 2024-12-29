@@ -1,5 +1,5 @@
 {
-    "name": "python-tree",
+    "name": "python-tekore-deps",
     "buildsystem": "simple",
     "build-commands": [],
     "modules": [
@@ -25,17 +25,21 @@
         {
             "name": "python3-maturin",
             "buildsystem": "simple",
-            "build-options": {"append-path": "/usr/lib/sdk/rust-stable/bin"},
+            "build-options": {"append-path": "/usr/lib/sdk/rust-stable/bin", "env": {"CARGO_HOME": "/run/build/python3-maturin/cargo", "RUSTFLAGS": "-L /app/lib/"}},
+
             "build-commands": [
-                "echo test test test 2",
-                "which rustc",
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"maturin\" --no-build-isolation"
+                      "cargo --offline fetch --manifest-path Cargo.toml --verbose",
+		      "cargo --offline build --release --verbose",
+		      "install -Dm755 target/release/maturin -t ${FLATPAK_DEST}/bin",
+		      "install -Dm644 maturin/__init__.py -t ${FLATPAK_DEST}/lib/python$(python -c 'import sys; print(\"%s.%s\" %sys.version_info[0:2])')/site-packages/maturin/"
             ],
             "sources": [
+                    "maturin-cargo.json",
+
                 {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/b0/f3/776ae3234473b63f9427dcf7fee2e69fe3c1eedae242ab9d1f3e7c25ec59/maturin-1.8.0.tar.gz",
-                    "sha256": "2f4abdf33e87ccb0d035a838e832945c6f7374222eacde508fafc752dda8ba6e"
+                    "type": "git",
+                    "url": "https://github.com/PyO3/maturin/",
+                    "tag": "v1.8.0"
                 }
             ]
         }
