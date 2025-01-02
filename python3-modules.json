@@ -293,8 +293,7 @@
             "name": "python3-tekore",
             "buildsystem": "simple",
             "build-commands": [
-                "source /usr/lib/sdk/rust-stable/enable.sh",
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"tekore\" --no-build-isolation"
+                "source /usr/lib/sdk/rust-stable/enable.sh && pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"tekore\" --no-build-isolation"
             ],
             "sources": [
                 {
