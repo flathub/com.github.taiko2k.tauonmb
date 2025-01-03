@@ -34,12 +34,11 @@
    ],
    "modules":[
      "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
-"python-pylast.json",     
-"python-dbus-deps.json",
+     "python-pylast.json",
+     "python-dbus-deps.json",
      "python-tekore-deps.json",
      "python3-scikit-build-core.json",
      "python3-poetry.json",
-     
      "python3-modules.json",
      "librespot.json",
      {
@@ -126,8 +125,8 @@
             "mkdir -p /app/share/icons/hicolor/symbolic/apps",
             "install -D extra/tauonmb.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
             "install -D extra/tauonmb-symbolic.svg /app/share/icons/hicolor/symbolic/apps/${FLATPAK_ID}-symbolic.svg",
-            "install -D assets/icon-64.png /app/share/icons/hicolor/64x64/apps/${FLATPAK_ID}.png",
-            "install -D assets/icon-128.png /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png",
+            "install -D src/tauon/assets/icon-64.png /app/share/icons/hicolor/64x64/apps/${FLATPAK_ID}.png",
+            "install -D src/tauon/assets/icon-128.png /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png",
             "install -D extra/com.github.taiko2k.tauonmb.appdata.xml /app/share/metainfo/${FLATPAK_ID}.appdata.xml",
             "install -D extra/com.github.taiko2k.tauonmb.desktop /app/share/applications/${FLATPAK_ID}.desktop",
             "install -D extra/com.github.taiko2k.tauonmb.sh /app/bin/com.github.taiko2k.tauonmb.sh"
@@ -136,7 +135,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"5406a315419133526dd89f990e16d146827743c3"
+               "commit":"9c3658aeb830939cae326ba0b529da4b7362384d"
             }
          ]
       },
