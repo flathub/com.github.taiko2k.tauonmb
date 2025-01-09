@@ -38,7 +38,6 @@
      "python-dbus-deps.json",
      "python-tekore-deps.json",
      "python3-scikit-build-core.json",
-     "python3-poetry.json",
      "python3-modules.json",
      "librespot.json",
      {
@@ -135,7 +134,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"cbd27555d916924b93d6911e2d4c3af015b47015"
+               "commit":"743d06b9829a4e56bf5f7fe17703a0d726f22902"
             }
          ]
       },
