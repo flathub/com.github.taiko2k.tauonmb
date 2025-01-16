@@ -20,8 +20,8 @@
         "librespot-cargo-sources.json",
         {
             "type": "archive",
-            "url": "https://github.com/librespot-org/librespot/archive/refs/tags/v0.4.2.tar.gz",
-            "sha256": "cc8cb81bdbaa5abf366170dec5e6b8c0ecf570a7cb68f04483e9f7eed338ca61"
+            "url": "https://github.com/librespot-org/librespot/archive/refs/tags/v0.6.0.tar.gz",
+            "sha256": "9ec881edb11e37d31a2b41dd30d56a3413445eedb720e1b0d278567dccfca8fc"
         }
     ]
 }
