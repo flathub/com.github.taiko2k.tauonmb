@@ -1,7 +1,7 @@
 {
    "app-id":"com.github.taiko2k.tauonmb",
    "runtime":"org.gnome.Platform",
-   "runtime-version":"47",
+   "runtime-version":"48",
    "sdk":"org.gnome.Sdk",
    "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
    "command":"com.github.taiko2k.tauonmb.sh",
@@ -34,6 +34,7 @@
    ],
    "modules":[
      "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
+     "python3-PySDL3.json",
      "python-pylast.json",
      "python-dbus-deps.json",
      "python-tekore-deps.json",
@@ -58,6 +59,23 @@
               "*.a",
               "/include"
          ]
+      },
+      {
+         "name": "SDL3",
+         "sources": [
+            {
+              "type": "archive",
+              "url": "https://github.com/libsdl-org/SDL/releases/download/release-3.2.8/SDL3-3.2.8.tar.gz",
+              "sha256": "13388fabb361de768ecdf2b65e52bb27d1054cae6ccb6942ba926e378e00db03"
+            }
+         ],
+        "cleanup": [
+              "*.la",
+              "*.a",
+              "/include",
+              "/bin",
+              "/share/man"
+            ]
       },
       {
          "name": "wavpack",
@@ -134,7 +152,7 @@
             {
                "type":"git",
                "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"0a6d5515e093629d99e3e30d3268e8d1ecd03998"
+               "commit":"fa3545e3821b69a5f23fd65a6310dbd32c16727a"
             }
          ]
       },
