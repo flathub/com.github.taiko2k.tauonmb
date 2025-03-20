@@ -1,241 +1,167 @@
 {
-   "app-id":"com.github.taiko2k.tauonmb",
-   "runtime":"org.gnome.Platform",
-   "runtime-version":"48",
-   "sdk":"org.gnome.Sdk",
-   "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
-   "command":"com.github.taiko2k.tauonmb.sh",
-   "add-extensions": {
+    "app-id": "com.github.taiko2k.tauonmb",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "48",
+    "sdk": "org.gnome.Sdk",
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.rust-stable"
+    ],
+    "command": "com.github.taiko2k.tauonmb.sh",
+    "add-extensions": {
         "org.freedesktop.Platform.ffmpeg-full": {
-        "version": "24.08",
-        "directory": "lib/ffmpeg",
-        "add-ld-path": ".",
-        "autodelete": false
+            "version": "24.08",
+            "directory": "lib/ffmpeg",
+            "add-ld-path": ".",
+            "autodelete": false
         }
-   },
-   "cleanup-commands": ["mkdir -p ${FLATPAK_DEST}/lib/ffmpeg"],
-   "finish-args":[
-      "--share=ipc",
-      "--share=network",
-      "--socket=wayland",
-      "--socket=fallback-x11",
-      "--socket=pulseaudio",
-      "--device=all",
-      "--filesystem=xdg-music",
-      "--filesystem=xdg-download",
-      "--filesystem=xdg-run/app/com.discordapp.Discord:create",
-      "--filesystem=xdg-run/discord-ipc-0",
-      "--filesystem=xdg-run/pipewire-0",
-      "--system-talk-name=org.freedesktop.login1",
-      "--talk-name=org.freedesktop.Notifications",
-      "--talk-name=org.kde.StatusNotifierWatcher",
-      "--own-name=org.mpris.MediaPlayer2.tauon"
-
-   ],
-   "modules":[
-     "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
-     "python3-PySDL3.json",
-     "python-pylast.json",
-     "python-dbus-deps.json",
-     "python-tekore-deps.json",
-     "python3-scikit-build-core.json",
-     "python3-modules.json",
-     "librespot.json",
-     {
-    "name": "foo"
-     },
-      {
-         "name": "libopenmpt",
-         "config-opts": ["--without-portaudio", "--disable-examples" ],
-         "sources": [
-            {
-              "type": "archive",
-              "url": "https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.7.9+release.autotools.tar.gz",
-              "sha256": "0386e918d75d797e79d5b14edd0847165d8b359e9811ef57652c0a356a2dfcf4"
-            }
-         ],
-         "cleanup": [
-              "*.la",
-              "*.a",
-              "/include"
-         ]
-      },
-      {
-         "name": "SDL3",
-         "sources": [
-            {
-              "type": "archive",
-              "url": "https://github.com/libsdl-org/SDL/releases/download/release-3.2.8/SDL3-3.2.8.tar.gz",
-              "sha256": "13388fabb361de768ecdf2b65e52bb27d1054cae6ccb6942ba926e378e00db03"
-            }
-         ],
-        "cleanup": [
-              "*.la",
-              "*.a",
-              "/include",
-              "/bin",
-              "/share/man"
+    },
+    "cleanup-commands": [
+        "mkdir -p ${FLATPAK_DEST}/lib/ffmpeg"
+    ],
+    "finish-args": [
+        "--share=ipc",
+        "--share=network",
+        "--socket=wayland",
+        "--socket=fallback-x11",
+        "--socket=pulseaudio",
+        "--device=all",
+        "--filesystem=xdg-music",
+        "--filesystem=xdg-download",
+        "--filesystem=xdg-run/app/com.discordapp.Discord:create",
+        "--filesystem=xdg-run/discord-ipc-0",
+        "--filesystem=xdg-run/pipewire-0",
+        "--system-talk-name=org.freedesktop.login1",
+        "--talk-name=org.freedesktop.Notifications",
+        "--talk-name=org.kde.StatusNotifierWatcher",
+        "--own-name=org.mpris.MediaPlayer2.tauon"
+    ],
+    "modules": [
+        "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
+        "python-pylast.json",
+        "python-dbus-deps.json",
+        "python-tekore-deps.json",
+        "python-frozenlist.json",
+        "python3-scikit-build-core.json",
+        "python3-modules.json",
+        "sdl3.json",
+        "fonts.json",
+        {
+            "name": "libopenmpt",
+            "buildsystem": "autotools",
+            "config-opts": [
+                "--without-portaudio",
+                "--disable-examples"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.7.13+release.autotools.tar.gz",
+                    "sha256": "dcd7cde4f9c498eb496c4556e1c1b81353e2a74747e8270a42565117ea42e1f1"
+                }
+            ],
+            "cleanup": [
+                "*.la",
+                "*.a",
+                "/include"
             ]
-      },
-      {
-         "name": "wavpack",
-         "sources": [
-            {
-              "type": "archive",
-              "url": "https://www.wavpack.com/wavpack-5.4.0.tar.bz2",
-              "sha256": "0716a6dcf9a72d61005e1b09bbbd61aaf49837cb4e4a351992a6daed16cac034"
-            }
-         ],
-        "cleanup": [
-              "*.la",
-              "*.a",
-              "/include",
-              "/bin",
-              "/share/man"
+        },
+        {
+            "name": "wavpack",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.wavpack.com/wavpack-5.8.1.tar.bz2",
+                    "sha256": "7bd540ed92d2d1bf412213858a9e4f1dfaf6d9a614f189b0622060a432e77bbf"
+                }
+            ],
+            "cleanup": [
+                "*.la",
+                "*.a",
+                "/include",
+                "/bin",
+                "/share/man"
             ]
-      },
-      {
-         "name": "opusfile",
-         "config-opts": [ "--disable-doc", "--disable-examples" ],
-         "sources": [
-            {
-              "type": "archive",
-              "url": "https://ftp.osuosl.org/pub/xiph/releases/opus/opusfile-0.12.tar.gz",
-              "sha256": "118d8601c12dd6a44f52423e68ca9083cc9f2bfe72da7a8c1acb22a80ae3550b"
-            }
-         ],
-        "cleanup": [
-              "*.la",
-              "*.a",
-              "/include"
+        },
+        {
+            "name": "opusfile",
+            "config-opts": [
+                "--disable-doc",
+                "--disable-examples"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://ftp.osuosl.org/pub/xiph/releases/opus/opusfile-0.12.tar.gz",
+                    "sha256": "118d8601c12dd6a44f52423e68ca9083cc9f2bfe72da7a8c1acb22a80ae3550b"
+                }
+            ],
+            "cleanup": [
+                "*.la",
+                "*.a",
+                "/include"
             ]
-      },
-      {
-         "name": "libgme",
-         "buildsystem": "cmake-ninja",
-         "sources": [
-            {
-              "type": "archive",
-              "url": "https://github.com/libgme/game-music-emu/archive/refs/tags/0.6.3.tar.gz",
-              "sha256": "4c5a7614acaea44e5cb1423817d2889deb82674ddbc4e3e1291614304b86fca0"
-            }
-         ],
-        "cleanup": [
-              "*.la",
-              "*.a",
-              "/include",
-              "/bin",
-              "/share/man"
+        },
+        {
+            "name": "libgme",
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/libgme/game-music-emu/archive/refs/tags/0.6.4.tar.gz",
+                    "sha256": "f2360feb5a32ace226c583df4faf6eff74145c81264aaea11e17a1af2f6f101a"
+                }
+            ],
+            "cleanup": [
+                "*.la",
+                "*.a",
+                "/include",
+                "/bin",
+                "/share/man"
             ]
-      },
-      {
-         "name":"tauonmb-git",
-         "buildsystem":"simple",
-         "build-commands":[
-            "bash run.sh 5",
-            "python3 compile_translations.py",
-            "mkdir -p /app/share/locale",
-            "mv src/tauon/locale /app/share/",
-            "mkdir -p /app/bin",
-            "cp -r * /app/bin/",
-            "mkdir -p /app/share/icons/hicolor/scalable/apps",
-            "mkdir -p /app/share/icons/hicolor/symbolic/apps",
-            "install -D extra/tauonmb.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
-            "install -D extra/tauonmb-symbolic.svg /app/share/icons/hicolor/symbolic/apps/${FLATPAK_ID}-symbolic.svg",
-            "install -D src/tauon/assets/icon-64.png /app/share/icons/hicolor/64x64/apps/${FLATPAK_ID}.png",
-            "install -D src/tauon/assets/icon-128.png /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png",
-            "install -D extra/com.github.taiko2k.tauonmb.appdata.xml /app/share/metainfo/${FLATPAK_ID}.appdata.xml",
-            "install -D extra/com.github.taiko2k.tauonmb.desktop /app/share/applications/${FLATPAK_ID}.desktop",
-            "install -D extra/com.github.taiko2k.tauonmb.sh /app/bin/com.github.taiko2k.tauonmb.sh"
-         ],
-         "sources":[
-            {
-               "type":"git",
-               "url":"https://github.com/Taiko2k/TauonMusicBox.git",
-               "commit":"fa3545e3821b69a5f23fd65a6310dbd32c16727a"
-            }
-         ]
-      },
-      {
-         "name":"python-cairo",
-         "buildsystem":"simple",
-         "build-commands":[
-            "python3 setup.py build",
-            "mkdir /app/bin/cairo",
-            "install -D build/lib.linux-*/cairo/* /app/bin/cairo/"
-         ],
-         "sources":[
-            {
-               "type":"archive",
-               "url":"https://github.com/pygobject/pycairo/releases/download/v1.19.1/pycairo-1.19.1.tar.gz",
-               "sha256":"2c143183280feb67f5beb4e543fd49990c28e7df427301ede04fc550d3562e84"
-            }
-         ]
-      },
-      {
-         "name":"noto-fonts",
-         "buildsystem":"simple",
-         "build-commands":[
-            "mkdir -p /app/share/fonts",
-            "install -D NotoSans-Bold.ttf /app/share/fonts/",
-            "install -D NotoSans-Medium.ttf /app/share/fonts/",
-            "install -D NotoSans-Regular.ttf /app/share/fonts/",
-            "install -D NotoSans-ExtraCondensed.ttf /app/share/fonts/",
-            "install -D NotoSans-ExtraCondensedBold.ttf /app/share/fonts/"
-         ],
-         "sources":[
-            {
-               "type":"archive",
-               "url":"https://noto-website-2.storage.googleapis.com/pkgs/NotoSans-hinted.zip",
-               "sha256":"02e5f834c526f815f3b9f90f98e2b5b09f17cec107cc751c3b58fc3a2c0b2942"
-            }
-         ]
-      },
-            {
-         "name":"noto-font-cjk-regular",
-         "buildsystem":"simple",
-         "build-commands":[
-            "mkdir -p /app/share/fonts",
-            "install -D NotoSansCJK-Regular.ttc /app/share/fonts/"
-         ],
-         "sources":[
-            {
-               "type":"archive",
-               "url":"https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJK-Regular.ttc.zip",
-               "sha256":"32d03afb0b1109fa75a96f89dfc118015283a5343f2216ee4b3757c19992f75d"
-            }
-         ]
-      },
-      {
-         "name":"noto-font-cjk-bold",
-         "buildsystem":"simple",
-         "build-commands":[
-            "mkdir -p /app/share/fonts",
-            "install -D NotoSansCJK-Bold.ttc /app/share/fonts/"
-         ],
-         "sources":[
-            {
-               "type":"archive",
-               "url":"https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJK-Bold.ttc.zip",
-               "sha256":"3cd895bce6765903b2eefcd90eea6ed372364e66d5b896ea3a594bd3e737eba0"
-            }
-         ]
-      },
-      {
-         "name":"noto-font-cjk-medium",
-         "buildsystem":"simple",
-         "build-commands":[
-            "mkdir -p /app/share/fonts",
-            "install -D NotoSansCJK-Medium.ttc /app/share/fonts/"
-         ],
-         "sources":[
-            {
-               "type":"archive",
-               "url":"https://noto-website-2.storage.googleapis.com/pkgs/NotoSansCJK-Medium.ttc.zip",
-               "sha256":"d7590637168e1cff4fd3a15422e483308d7ba2a7120ccaf96ead274c3b40e1b3"
-            }
-         ]
-      }
-
-   ]
+        },
+        {
+            "name": "tauonmb-git",
+            "buildsystem": "simple",
+            "build-commands": [
+                "bash run.sh 5",
+                "python3 compile_translations.py",
+                "mkdir -p /app/share/locale",
+                "mv src/tauon/locale /app/share/",
+                "mkdir -p /app/bin",
+                "cp -r * /app/bin/",
+                "mkdir -p /app/share/icons/hicolor/scalable/apps",
+                "mkdir -p /app/share/icons/hicolor/symbolic/apps",
+                "install -D extra/tauonmb.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
+                "install -D extra/tauonmb-symbolic.svg /app/share/icons/hicolor/symbolic/apps/${FLATPAK_ID}-symbolic.svg",
+                "install -D src/tauon/assets/icon-64.png /app/share/icons/hicolor/64x64/apps/${FLATPAK_ID}.png",
+                "install -D src/tauon/assets/icon-128.png /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png",
+                "install -D extra/com.github.taiko2k.tauonmb.appdata.xml /app/share/metainfo/${FLATPAK_ID}.appdata.xml",
+                "install -D extra/com.github.taiko2k.tauonmb.desktop /app/share/applications/${FLATPAK_ID}.desktop",
+                "install -D extra/com.github.taiko2k.tauonmb.sh /app/bin/com.github.taiko2k.tauonmb.sh"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/Taiko2k/Tauon.git",
+                    "commit": "fa3545e3821b69a5f23fd65a6310dbd32c16727a"
+                }
+            ]
+        },
+        {
+            "name": "python-cairo",
+            "buildsystem": "simple",
+            "build-commands": [
+                "python3 setup.py build",
+                "mkdir /app/bin/cairo",
+                "install -D build/lib.linux-*/cairo/* /app/bin/cairo/"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/pygobject/pycairo/releases/download/v1.19.1/pycairo-1.19.1.tar.gz",
+                    "sha256": "2c143183280feb67f5beb4e543fd49990c28e7df427301ede04fc550d3562e84"
+                }
+            ]
+        }
+    ]
 }
