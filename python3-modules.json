@@ -109,8 +109,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/57/4c/90c5adbc059d42bb59fc98d4cd9ee336235b5d3213bc94aee95207d9c717/pysdl3-0.9.6b4-py3-none-any.whl",
-                    "sha256": "1c42504daf5c1728db9f918075c17875d923fb5c83e23015270d6308ac8a52f1"
+                    "url": "https://files.pythonhosted.org/packages/b7/07/c481c7285c8a2f5f8d3edbb79e72548faddd73637386134ab93ac076532a/pysdl3-0.9.7b2-py3-none-any.whl",
+                    "sha256": "7fe56816582d4ec96db9a0b9cfa93d9e3daf45b2c2b6c7415c3b5215d21a271e"
                 },
                 {
                     "type": "file",
