@@ -9,6 +9,9 @@ Updating python-dbus-deps.json:
 Updating python-frozenlist.json:
 ./flatpak-builder-tools/pip/flatpak-pip-generator frozenlist -o python-frozenlist
 
+Updating python3-poetry-core.json:
+./flatpak-builder-tools/pip/flatpak-pip-generator poetry-core -o python3-poetry-core
+
 Updating python3-modules.json:
 ./flatpak-builder-tools/pip/flatpak-pip-generator \
 	Pillow \
@@ -31,6 +34,7 @@ Updating python3-modules.json:
 	colored_traceback \
 	jxlpy \
 	tidalapi \
+	pychromecast \
     -o python3-modules
 
 Updating tekore:

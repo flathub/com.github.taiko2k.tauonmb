@@ -42,6 +42,7 @@
         "python-tekore-deps.json",
         "python-frozenlist.json",
         "python3-scikit-build-core.json",
+        "python3-poetry-core.json",
         "python3-modules.json",
         "librespot.json",
         "sdl3.json",
