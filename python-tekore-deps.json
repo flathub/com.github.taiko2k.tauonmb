@@ -25,17 +25,21 @@
         {
             "name": "python3-maturin",
             "buildsystem": "simple",
-            "build-options": {"append-path": "/usr/lib/sdk/rust-stable/bin", "env": {"CARGO_HOME": "/run/build/python3-maturin/cargo", "RUSTFLAGS": "-L /app/lib/"}},
-
+            "build-options": {
+                "append-path": "/usr/lib/sdk/rust-stable/bin",
+                "env": {
+                    "CARGO_HOME": "/run/build/python3-maturin/cargo",
+                    "RUSTFLAGS": "-L /app/lib/"
+                }
+            },
             "build-commands": [
-                      "cargo --offline fetch --manifest-path Cargo.toml --verbose",
-                      "cargo --offline build --release --verbose",
-                      "install -Dm755 target/release/maturin -t ${FLATPAK_DEST}/bin",
-                      "install -Dm644 maturin/__init__.py -t ${FLATPAK_DEST}/lib/python$(python -c 'import sys; print(\"%s.%s\" %sys.version_info[0:2])')/site-packages/maturin/"
+                "cargo --offline fetch --manifest-path Cargo.toml --verbose",
+                "cargo --offline build --release --verbose",
+                "install -Dm755 target/release/maturin -t ${FLATPAK_DEST}/bin",
+                "install -Dm644 maturin/__init__.py -t ${FLATPAK_DEST}/lib/python$(python -c 'import sys; print(\"%s.%s\" %sys.version_info[0:2])')/site-packages/maturin/"
             ],
             "sources": [
-                    "maturin-cargo.json",
-
+                "maturin-cargo.json",
                 {
                     "type": "git",
                     "url": "https://github.com/PyO3/maturin/",
@@ -43,37 +47,29 @@
                 }
             ]
         },
-        
-        
-        
-	  {
-	    "name": "pydantic-core",
-	    "buildsystem": "simple",
-	    "build-options": {
-	      "append-path": "/usr/lib/sdk/rust-stable/bin",
-	      "env": {
-		
-		"CARGO_HOME": "/run/build/pydantic-core/cargo",
-		"RUSTFLAGS": "-L /app/lib/"
-	      }
-	    },
-	    "build-commands": [
-	      "cargo --offline fetch --manifest-path Cargo.toml --verbose",
-	      "maturin build --release",
-	      "pip3 install --verbose --exists-action=i --no-index --find-links=file://${PWD}/target/wheels --prefix=${FLATPAK_DEST} \"pydantic-core\" --no-build-isolation"
-	    ],
-	    "sources": [
-	      "pydantic-core-cargo.json",
-	      {
-        "type": "git",
-        "url": "https://github.com/pydantic/pydantic-core/",
-        "tag": "v2.27.2"
-	      }
-	    ]
-	  }
-
-        
-        
-        
+        {
+            "name": "pydantic-core",
+            "buildsystem": "simple",
+            "build-options": {
+                "append-path": "/usr/lib/sdk/rust-stable/bin",
+                "env": {
+                    "CARGO_HOME": "/run/build/pydantic-core/cargo",
+                    "RUSTFLAGS": "-L /app/lib/"
+                }
+            },
+            "build-commands": [
+                "cargo --offline fetch --manifest-path Cargo.toml --verbose",
+                "maturin build --release",
+                "pip3 install --verbose --exists-action=i --no-index --find-links=file://${PWD}/target/wheels --prefix=${FLATPAK_DEST} \"pydantic-core\" --no-build-isolation"
+            ],
+            "sources": [
+                "pydantic-core-cargo.json",
+                {
+                    "type": "git",
+                    "url": "https://github.com/pydantic/pydantic-core/",
+                    "tag": "v2.27.2"
+                }
+            ]
+        }
     ]
 }
