@@ -122,6 +122,22 @@
             ]
         },
         {
+            "name": "python-cairo",
+            "buildsystem": "simple",
+            "build-commands": [
+                "python3 setup.py build",
+                "mkdir /app/bin/cairo",
+                "install -D build/lib.linux-*/cairo/* /app/bin/cairo/"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/pygobject/pycairo/releases/download/v1.19.1/pycairo-1.19.1.tar.gz",
+                    "sha256": "2c143183280feb67f5beb4e543fd49990c28e7df427301ede04fc550d3562e84"
+                }
+            ]
+        },
+        {
             "name": "tauonmb-git",
             "buildsystem": "simple",
             "build-commands": [
@@ -145,23 +161,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Taiko2k/Tauon.git",
-                    "commit": "9996d51e73f4eb082022cc1a16dcb1ed243f3af4"
-                }
-            ]
-        },
-        {
-            "name": "python-cairo",
-            "buildsystem": "simple",
-            "build-commands": [
-                "python3 setup.py build",
-                "mkdir /app/bin/cairo",
-                "install -D build/lib.linux-*/cairo/* /app/bin/cairo/"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/pygobject/pycairo/releases/download/v1.19.1/pycairo-1.19.1.tar.gz",
-                    "sha256": "2c143183280feb67f5beb4e543fd49990c28e7df427301ede04fc550d3562e84"
+                    "commit": "b1543b25e9adb12d431dd79f7ac04758404c52d5"
                 }
             ]
         }
