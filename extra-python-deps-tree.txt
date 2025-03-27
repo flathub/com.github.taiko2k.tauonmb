@@ -4,10 +4,10 @@ Updating python-pylast.json:
 ./flatpak-builder-tools/pip/flatpak-pip-generator typing_extensions pylast -o python-pylast
 
 Updating python-dbus-deps.json: 
-./flatpak-builder-tools/pip/flatpak-pip-generator scikit-build setuptools_scm patchelf meson-python -o python-dbus-deps
+./flatpak-builder-tools/pip/flatpak-pip-generator scikit-build scikit-build-core setuptools_scm patchelf meson-python -o python-dbus-deps
 
 Updating python-frozenlist.json:
-./flatpak-builder-tools/pip/flatpak-pip-generator frozenlist -o python-frozenlist
+./flatpak-builder-tools/pip/flatpak-pip-generator expandvars frozenlist -o python-frozenlist
 
 Updating python3-poetry-core.json:
 ./flatpak-builder-tools/pip/flatpak-pip-generator poetry-core -o python3-poetry-core
