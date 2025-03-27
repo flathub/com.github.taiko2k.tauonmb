@@ -47,96 +47,11 @@
         "librespot.json",
         "sdl3.json",
         "fonts.json",
-        {
-            "name": "libopenmpt",
-            "buildsystem": "autotools",
-            "config-opts": [
-                "--without-portaudio",
-                "--disable-examples"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.7.13+release.autotools.tar.gz",
-                    "sha256": "dcd7cde4f9c498eb496c4556e1c1b81353e2a74747e8270a42565117ea42e1f1"
-                }
-            ],
-            "cleanup": [
-                "*.la",
-                "*.a",
-                "/include"
-            ]
-        },
-        {
-            "name": "wavpack",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://www.wavpack.com/wavpack-5.8.1.tar.bz2",
-                    "sha256": "7bd540ed92d2d1bf412213858a9e4f1dfaf6d9a614f189b0622060a432e77bbf"
-                }
-            ],
-            "cleanup": [
-                "*.la",
-                "*.a",
-                "/include",
-                "/bin",
-                "/share/man"
-            ]
-        },
-        {
-            "name": "opusfile",
-            "config-opts": [
-                "--disable-doc",
-                "--disable-examples"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://ftp.osuosl.org/pub/xiph/releases/opus/opusfile-0.12.tar.gz",
-                    "sha256": "118d8601c12dd6a44f52423e68ca9083cc9f2bfe72da7a8c1acb22a80ae3550b"
-                }
-            ],
-            "cleanup": [
-                "*.la",
-                "*.a",
-                "/include"
-            ]
-        },
-        {
-            "name": "libgme",
-            "buildsystem": "cmake-ninja",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/libgme/game-music-emu/archive/refs/tags/0.6.4.tar.gz",
-                    "sha256": "f2360feb5a32ace226c583df4faf6eff74145c81264aaea11e17a1af2f6f101a"
-                }
-            ],
-            "cleanup": [
-                "*.la",
-                "*.a",
-                "/include",
-                "/bin",
-                "/share/man"
-            ]
-        },
-        {
-            "name": "python-cairo",
-            "buildsystem": "simple",
-            "build-commands": [
-                "python3 setup.py build",
-                "mkdir /app/bin/cairo",
-                "install -D build/lib.linux-*/cairo/* /app/bin/cairo/"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/pygobject/pycairo/releases/download/v1.19.1/pycairo-1.19.1.tar.gz",
-                    "sha256": "2c143183280feb67f5beb4e543fd49990c28e7df427301ede04fc550d3562e84"
-                }
-            ]
-        },
+        "libopenmpt.json",
+        "wavpack.json",
+        "opusfile.json",
+        "libgme.json",
+        "python-cairo.json",
         {
             "name": "tauonmb-git",
             "buildsystem": "simple",
