@@ -127,6 +127,7 @@
             "build-commands": [
                 "bash run.sh 5",
                 "python3 compile_translations.py",
+                "cargo build --release --manifest-path src/lrclib-solver/Cargo.toml --bin lrclib-solver",
                 "mkdir -p /app/share/locale",
                 "mv src/tauon/locale /app/share/",
                 "mkdir -p /app/bin",
@@ -140,12 +141,13 @@
                 "install -D extra/com.github.taiko2k.tauonmb.appdata.xml /app/share/metainfo/${FLATPAK_ID}.appdata.xml",
                 "install -D extra/com.github.taiko2k.tauonmb.desktop /app/share/applications/${FLATPAK_ID}.desktop",
                 "install -D extra/com.github.taiko2k.tauonmb.sh /app/bin/com.github.taiko2k.tauonmb.sh"
+                
             ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/Taiko2k/Tauon.git",
-                    "commit": "0dd1de629f6f271c307f25175a68229a3ae91909"
+                    "commit": "424aebc342a18eebcdeb23e89baade1160f59920"
                 }
             ]
         },
