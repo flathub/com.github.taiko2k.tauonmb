@@ -124,6 +124,9 @@
         {
             "name": "tauonmb-git",
             "buildsystem": "simple",
+            "build-options": {
+                "append-path" : "/usr/lib/sdk/rust-stable/bin"
+            },
             "build-commands": [
                 "bash run.sh 5",
                 "python3 compile_translations.py",
