@@ -134,6 +134,7 @@
             
 		"cargo --offline fetch --manifest-path src/lrclib-solver/Cargo.toml --verbose",
                 "cargo build --release --offline --manifest-path src/lrclib-solver/Cargo.toml --bin lrclib-solver",
+                "cp src/lrclib-solver/target/release/lrclib-solver src/tauon/lrclib-solver",
 		
                 "bash run.sh 5",
                 "python3 compile_translations.py",
