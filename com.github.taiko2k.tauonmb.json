@@ -125,12 +125,18 @@
             "name": "tauonmb-git",
             "buildsystem": "simple",
             "build-options": {
-                "append-path" : "/usr/lib/sdk/rust-stable/bin"
+                "append-path" : "/usr/lib/sdk/rust-stable/bin",
+                "env" : {
+                     "CARGO_HOME" : "/run/build/tauonmb-git/cargo"
+                }
             },
             "build-commands": [
+            
+		"cargo --offline fetch --manifest-path src/lrclib-solver/Cargo.toml --verbose",
+                "cargo build --release --offline --manifest-path src/lrclib-solver/Cargo.toml --bin lrclib-solver",
+		
                 "bash run.sh 5",
                 "python3 compile_translations.py",
-                "cargo build --release --manifest-path src/lrclib-solver/Cargo.toml --bin lrclib-solver",
                 "mkdir -p /app/share/locale",
                 "mv src/tauon/locale /app/share/",
                 "mkdir -p /app/bin",
@@ -147,10 +153,11 @@
                 
             ],
             "sources": [
+            	"lrclib-solver-cargo-sources.json",
                 {
                     "type": "git",
                     "url": "https://github.com/Taiko2k/Tauon.git",
-                    "commit": "424aebc342a18eebcdeb23e89baade1160f59920"
+                    "commit": "7fb644b503eb88decaf33fdfabe3f259571c41eb"
                 }
             ]
         },
