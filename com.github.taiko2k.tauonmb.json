@@ -45,7 +45,6 @@
         "python3-poetry-core.json",
         "python3-modules.json",
         "librespot.json",
-        "sdl3.json",
         "fonts.json",
         {
             "name": "libopenmpt",
