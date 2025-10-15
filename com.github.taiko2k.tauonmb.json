@@ -7,17 +7,6 @@
         "org.freedesktop.Sdk.Extension.rust-stable"
     ],
     "command": "com.github.taiko2k.tauonmb.sh",
-    "add-extensions": {
-        "org.freedesktop.Platform.ffmpeg-full": {
-            "version": "24.08",
-            "directory": "lib/ffmpeg",
-            "add-ld-path": ".",
-            "autodelete": false
-        }
-    },
-    "cleanup-commands": [
-        "mkdir -p ${FLATPAK_DEST}/lib/ffmpeg"
-    ],
     "finish-args": [
         "--share=ipc",
         "--share=network",
