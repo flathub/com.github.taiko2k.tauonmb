@@ -116,15 +116,14 @@
             "build-options": {
                 "append-path" : "/usr/lib/sdk/rust-stable/bin",
                 "env" : {
-                     "CARGO_HOME" : "/run/build/tauonmb-git/cargo"
+                    "CARGO_HOME" : "/run/build/tauonmb-git/cargo"
                 }
             },
             "build-commands": [
-            
-		"cargo --offline fetch --manifest-path src/lrclib-solver/Cargo.toml --verbose",
+                "cargo --offline fetch --manifest-path src/lrclib-solver/Cargo.toml --verbose",
                 "cargo build --release --offline --manifest-path src/lrclib-solver/Cargo.toml --bin lrclib-solver",
                 "cp src/lrclib-solver/target/release/lrclib-solver src/tauon/lrclib-solver",
-		
+
                 "bash run.sh 5",
                 "python3 compile_translations.py",
                 "mkdir -p /app/share/locale",
@@ -140,10 +139,9 @@
                 "install -D extra/com.github.taiko2k.tauonmb.appdata.xml /app/share/metainfo/${FLATPAK_ID}.appdata.xml",
                 "install -D extra/com.github.taiko2k.tauonmb.desktop /app/share/applications/${FLATPAK_ID}.desktop",
                 "install -D extra/com.github.taiko2k.tauonmb.sh /app/bin/com.github.taiko2k.tauonmb.sh"
-                
             ],
             "sources": [
-            	"lrclib-solver-cargo-sources.json",
+                "lrclib-solver-cargo-sources.json",
                 {
                     "type": "git",
                     "url": "https://github.com/Taiko2k/Tauon.git",
@@ -151,19 +149,19 @@
                 }
             ]
         },
-{
-    "name": "python3-pycairo",
-    "buildsystem": "simple",
-    "build-commands": [
-        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pycairo\" --no-build-isolation"
-    ],
-    "sources": [
         {
-            "type": "file",
-            "url": "https://files.pythonhosted.org/packages/40/d9/412da520de9052b7e80bfc810ec10f5cb3dbfa4aa3e23c2820dc61cdb3d0/pycairo-1.28.0.tar.gz",
-            "sha256": "26ec5c6126781eb167089a123919f87baa2740da2cca9098be8b3a6b91cc5fbc"
+            "name": "python3-pycairo",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pycairo\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/40/d9/412da520de9052b7e80bfc810ec10f5cb3dbfa4aa3e23c2820dc61cdb3d0/pycairo-1.28.0.tar.gz",
+                    "sha256": "26ec5c6126781eb167089a123919f87baa2740da2cca9098be8b3a6b91cc5fbc"
+                }
+            ]
         }
-    ]
-}
     ]
 }
