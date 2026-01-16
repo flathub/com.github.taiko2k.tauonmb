@@ -25,7 +25,7 @@
     {
       "type": "git",
       "url": "https://github.com/projectM-visualizer/projectm",
-      "branch": "master"
+      "commit": "014fb59dd5cd8026c90710828dabfb897ca60aff"
     }
   ],
   "cleanup": [
