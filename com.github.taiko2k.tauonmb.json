@@ -33,6 +33,8 @@
         "python3-scikit-build-core.json",
         "python3-poetry-core.json",
         "python3-modules.json",
+        "python3-PyOpenGL.json",
+        "projectm.json",
         "librespot.json",
         "fonts.json",
         "sdl3.json",
@@ -145,7 +147,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Taiko2k/Tauon.git",
-                    "commit": "6f731e93cde18419aa14b303278da7e6f2338e1f"
+                    "commit": "ced550d40d45f4c4b5b7238f245b85c20e62b894"
                 }
             ]
         },
