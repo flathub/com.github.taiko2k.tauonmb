@@ -35,7 +35,6 @@
         "python3-modules.json",
         "librespot.json",
         "fonts.json",
-        "sdl3.json",
         {
             "name": "libopenmpt",
             "buildsystem": "autotools",
