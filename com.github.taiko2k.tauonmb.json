@@ -166,6 +166,7 @@
                     "commit": "151dc45fee42a273573885524d15377d1fa1dec0"
                 }
             ]
-        }
+        },
+        "zenity.json"
     ]
 }

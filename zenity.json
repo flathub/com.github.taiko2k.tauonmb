@@ -1,0 +1,11 @@
+{
+    "name": "zenity",
+    "buildsystem": "meson",
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://gitlab.gnome.org/GNOME/zenity.git",
+            "tag": "4.2.1"
+        }
+    ]
+}
