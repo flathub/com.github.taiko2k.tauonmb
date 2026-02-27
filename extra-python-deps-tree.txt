@@ -1,20 +1,21 @@
 these aren't picked up by the flatpak builder pip helper script
 
-Updating python-pylast.json: 
+Updating python-pylast.json:
 ./flatpak-builder-tools/pip/flatpak-pip-generator typing_extensions pylast -o python-pylast
 
-Updating python-dbus-deps.json: 
+Updating python-dbus-deps.json:
 ./flatpak-builder-tools/pip/flatpak-pip-generator scikit-build setuptools_scm patchelf meson-python -o python-dbus-deps
 
 Updating python-frozenlist.json:
-./flatpak-builder-tools/pip/flatpak-pip-generator frozenlist -o python-frozenlist
+./flatpak-builder-tools/pip/flatpak-pip-generator expandvars frozenlist -o python-frozenlist
 
 Updating python3-poetry-core.json:
 ./flatpak-builder-tools/pip/flatpak-pip-generator poetry-core -o python3-poetry-core
 
 Updating python3-modules.json:
 ./flatpak-builder-tools/pip/flatpak-pip-generator \
-	Pillow \
+	pybind11 \
+	pillow \
 	dbus-python \
 	mutagen \
 	PySDL3 \
@@ -23,24 +24,24 @@ Updating python3-modules.json:
 	beautifulsoup4 \
 	PlexAPI \
 	musicbrainzngs \
-	lynxpresence \
+	pypresence \
 	setproctitle \
 	unidecode \
 	pulsectl \
 	natsort \
 	tekore \
 	websocket-client \
+	pychromecast \
 	opencc-python-reimplemented \
 	colored_traceback \
 	jxlpy \
 	tidalapi \
-	pychromecast \
-    -o python3-modules
+	-o python3-modules
 
 Updating tekore:
 
 python3-tekore
   - maturin       with      "build-options": {"append-path": "/usr/lib/sdk/rust-stable/bin"},
     - setuptools_rust
-    
+
 ./flatpak-pip-generator maturin setuptools_rust
