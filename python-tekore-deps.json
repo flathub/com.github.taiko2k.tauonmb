@@ -43,7 +43,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/PyO3/maturin/",
-                    "tag": "v1.12.4"
+                    "tag": "v1.12.4",
+                    "commit": "8495767a57c5060fbcdf5a33d670efe2d5af1f0b"
                 }
             ]
         },
@@ -73,7 +74,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/pydantic/pydantic-core/",
-                    "tag": "v2.41.5"
+                    "tag": "v2.41.5",
+                    "commit": "52b821dfc304b061b3c2d528f91011229d25f0a1"
                 }
             ]
         }

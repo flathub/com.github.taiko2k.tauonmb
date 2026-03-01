@@ -163,9 +163,10 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Taiko2k/Tauon.git",
-                    "commit": "151dc45fee42a273573885524d15377d1fa1dec0"
+                    "commit": "cf43236057a424210c8ad4df6572e5d020eb9ca8"
                 }
             ]
-        }
+        },
+        "zenity.json"
     ]
 }
