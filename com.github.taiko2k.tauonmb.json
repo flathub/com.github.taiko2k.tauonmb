@@ -142,7 +142,7 @@
                 "rm -rf src/lrclib-solver/target",
 
                 "bash run.sh 5",
-                "python3 compile_translations.py",
+                "python3 tools/i18n/compile_translations.py",
                 "rm -rf cargo maturin",
                 "mkdir -p /app/share/locale",
                 "mv src/tauon/locale /app/share/",
@@ -163,7 +163,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Taiko2k/Tauon.git",
-                    "commit": "69871a599f787d5bc102dfbe94e0e3133a3d02ec"
+                    "commit": "a0be457b978b886c5beb01ccefcb2fcfb97aed19"
                 }
             ]
         },
