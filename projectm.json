@@ -25,7 +25,8 @@
     {
       "type": "git",
       "url": "https://github.com/projectM-visualizer/projectm",
-      "commit": "014fb59dd5cd8026c90710828dabfb897ca60aff"
+      "branch": "master",
+      "commit": "4d2849333b63235a6af4d1f02508a97529d96dc7"
     }
   ],
   "cleanup": [
@@ -35,4 +36,3 @@
     "/share/man"
   ]
 }
-
