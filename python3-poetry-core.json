@@ -7,8 +7,8 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/19/ad/e3123a6351e8e23a36cc69c8d4e7891becb1932e4ab48ddbb7f709409c1c/poetry_core-2.1.1-py3-none-any.whl",
-            "sha256": "bc3b0382ab4d00d5d780277fd0aad1580eb4403613b37fc60fec407b5bee1fe6"
+            "url": "https://files.pythonhosted.org/packages/50/36/e0703d73bc9f89b95014173c9c7754816630a3282f2727637de5b076e5e4/poetry_core-2.4.1-py3-none-any.whl",
+            "sha256": "acf06f9537cd2625bdaec926d95d90b557ba15353bc71d27a3a8a441042b5316"
         }
     ]
 }

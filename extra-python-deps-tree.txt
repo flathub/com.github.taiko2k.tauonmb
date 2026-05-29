@@ -28,7 +28,6 @@ Updating python3-modules.json:
 	unidecode \
 	pulsectl \
 	natsort \
-	tekore \
 	websocket-client \
 	opencc-python-reimplemented \
 	colored_traceback \
@@ -36,11 +35,3 @@ Updating python3-modules.json:
 	tidalapi \
 	pychromecast \
     -o python3-modules
-
-Updating tekore:
-
-python3-tekore
-  - maturin       with      "build-options": {"append-path": "/usr/lib/sdk/rust-stable/bin"},
-    - setuptools_rust
-    
-./flatpak-pip-generator maturin setuptools_rust

@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.taiko2k.tauonmb",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "49",
+    "runtime-version": "50",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -27,15 +27,13 @@
     "modules": [
         "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
         "python-pylast.json",
-        "python-dbus-deps.json",
-        "python-tekore-deps.json",
-        "python-frozenlist.json",
         "python3-scikit-build-core.json",
+        "python-dbus-deps.json",
+        "python-frozenlist.json",
         "python3-poetry-core.json",
         "python3-modules.json",
         "python3-PyOpenGL.json",
         "projectm.json",
-        "librespot.json",
         "fonts.json",
         "sdl3.json",
         {
@@ -48,8 +46,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.7.13+release.autotools.tar.gz",
-                    "sha256": "dcd7cde4f9c498eb496c4556e1c1b81353e2a74747e8270a42565117ea42e1f1"
+                    "url": "https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.8.7+release.autotools.tar.gz",
+                    "sha256": "275c29ef47be9992f62a35fcc96f7ca05c06d2fd05c9298b8dee9f743f75b089"
                 }
             ],
             "cleanup": [
@@ -63,8 +61,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.wavpack.com/wavpack-5.8.1.tar.bz2",
-                    "sha256": "7bd540ed92d2d1bf412213858a9e4f1dfaf6d9a614f189b0622060a432e77bbf"
+                    "url": "https://www.wavpack.com/wavpack-5.9.0.tar.bz2",
+                    "sha256": "b0038f515d322042aaa6bd352d437729c6f5f904363cc85bbc9b0d8bd4a81927"
                 }
             ],
             "cleanup": [
@@ -100,8 +98,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libgme/game-music-emu/archive/refs/tags/0.6.4.tar.gz",
-                    "sha256": "f2360feb5a32ace226c583df4faf6eff74145c81264aaea11e17a1af2f6f101a"
+                    "url": "https://github.com/libgme/game-music-emu/archive/refs/tags/0.6.5.tar.gz",
+                    "sha256": "8531678502451c2cf04248cda45c8b4645e19fcfb63e6a7ec2549641c47bb392"
                 }
             ],
             "cleanup": [
@@ -121,8 +119,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/40/d9/412da520de9052b7e80bfc810ec10f5cb3dbfa4aa3e23c2820dc61cdb3d0/pycairo-1.28.0.tar.gz",
-                    "sha256": "26ec5c6126781eb167089a123919f87baa2740da2cca9098be8b3a6b91cc5fbc"
+                    "url": "https://files.pythonhosted.org/packages/22/d9/1728840a22a4ef8a8f479b9156aa2943cd98c3907accd3849fb0d5f82bfd/pycairo-1.29.0.tar.gz",
+                    "sha256": "f3f7fde97325cae80224c09f12564ef58d0d0f655da0e3b040f5807bd5bd3142"
                 }
             ]
         },
@@ -143,7 +141,7 @@
 
                 "bash run.sh 5",
                 "python3 tools/i18n/compile_translations.py",
-                "rm -rf cargo maturin",
+                "rm -rf cargo",
                 "mkdir -p /app/share/locale",
                 "mv src/tauon/locale /app/share/",
                 "mkdir -p /app/bin",
@@ -163,7 +161,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Taiko2k/Tauon.git",
-                    "commit": "a0be457b978b886c5beb01ccefcb2fcfb97aed19"
+                    "commit": "c2d186a5a8180c3f6a81ae8f216858f09cbd0fa0"
                 }
             ]
         },

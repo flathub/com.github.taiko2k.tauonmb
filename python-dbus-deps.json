@@ -17,13 +17,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/88/ef/eb23f262cca3c0c4eb7ab1933c3b1f03d021f2c48f54763065b6f0e321be/packaging-24.2-py3-none-any.whl",
-                    "sha256": "09abb1bccd265c01f4a3aa3f7a7db064b36514d2cba19a2f694fe6150451a759"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/c3/a3/21b519f58de90d684056c52ec4e45f744cfda7483f082dcc4dd18cc74a93/scikit_build-0.18.1-py3-none-any.whl",
-                    "sha256": "a6860e300f6807e76f21854163bdb9db16afc74eadf34bd6a9947d3fdfcd725a"
+                    "url": "https://files.pythonhosted.org/packages/9d/6d/57c59ee723ca0a08cfa37f6ee332c88692f38d3ef1a3ead049ff61959c20/scikit_build-0.19.0-py3-none-any.whl",
+                    "sha256": "956d1a179917e3994cb425662bb9e0ec052ef497995ce8e3f15b4030e02c5b94"
                 }
             ]
         },
@@ -36,13 +31,13 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/88/ef/eb23f262cca3c0c4eb7ab1933c3b1f03d021f2c48f54763065b6f0e321be/packaging-24.2-py3-none-any.whl",
-                    "sha256": "09abb1bccd265c01f4a3aa3f7a7db064b36514d2cba19a2f694fe6150451a759"
+                    "url": "https://files.pythonhosted.org/packages/5c/e1/342c4434df56aa537f6ce7647eefee521d96fbb828b08acd709865767652/setuptools_scm-10.0.5-py3-none-any.whl",
+                    "sha256": "f611037d8aae618221503b8fa89319f073438252ae3420e01c9ceec249131a0a"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/10/7c/5a9799042320242c383c4485a2771a37d49e8ce2312ca647653d2fd1a7a4/setuptools_scm-8.2.0-py3-none-any.whl",
-                    "sha256": "136e2b1d393d709d2bcf26f275b8dec06c48b811154167b0fd6bb002aad17d6d"
+                    "url": "https://files.pythonhosted.org/packages/e6/60/73603fbcdbe5e803855bcce4414f94eaeed449083bd8183e67161af78188/vcs_versioning-1.1.1-py3-none-any.whl",
+                    "sha256": "b541e2ba79fc6aaa3850f8a7f88af43d97c1c80649c01142ee4146eddbc599e4"
                 }
             ]
         },
@@ -55,8 +50,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/83/ec/ac383eb82792e092d8037649b382cf78a7b79c2ce4e5b861f61519b9b14e/patchelf-0.17.2.1.tar.gz",
-                    "sha256": "a6eb0dd452ce4127d0d5e1eb26515e39186fa609364274bc1b0b77539cfa7031"
+                    "url": "https://files.pythonhosted.org/packages/2c/a3/fdd3fa938c864aa2f11dd0b7f08befeda983d2dcdee44da493c6977a653f/patchelf-0.17.2.4.tar.gz",
+                    "sha256": "970ee5cd8af33e5ea2099510b2f9013fa1b8d5cd763bf3fd3961281c18101a09"
                 }
             ]
         },
@@ -69,18 +64,13 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/7d/ec/40c0ddd29ef4daa6689a2b9c5ced47d5b58fa54ae149b19e9a97f4979c8c/meson_python-0.17.1-py3-none-any.whl",
-                    "sha256": "30a75c52578ef14aff8392677b09c39346e0a24d2b2c6204b8ed30583c11269c"
+                    "url": "https://files.pythonhosted.org/packages/16/7f/d1b0c65b267a1463d752b324f11d3470e30889daefc4b9ec83029bfa30b5/meson_python-0.19.0-py3-none-any.whl",
+                    "sha256": "67b5906c37404396d23c195e12c8825506074460d4a2e7083266b845d14f0298"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/88/ef/eb23f262cca3c0c4eb7ab1933c3b1f03d021f2c48f54763065b6f0e321be/packaging-24.2-py3-none-any.whl",
-                    "sha256": "09abb1bccd265c01f4a3aa3f7a7db064b36514d2cba19a2f694fe6150451a759"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/e8/61/9dd3e68d2b6aa40a5fc678662919be3c3a7bf22cba5a6b4437619b77e156/pyproject_metadata-0.9.0-py3-none-any.whl",
-                    "sha256": "fc862aab066a2e87734333293b0af5845fe8ac6cb69c451a41551001e923be0b"
+                    "url": "https://files.pythonhosted.org/packages/1d/0b/da4851b1e2d9c40c9bd74c0abd94510a7d797da9ccde0a90e8953751ed4a/pyproject_metadata-0.11.0-py3-none-any.whl",
+                    "sha256": "85bbecca8694e2c00f63b492c96921d6c228454057c88e7c352b2077fcaa4096"
                 }
             ]
         }
