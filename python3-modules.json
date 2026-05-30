@@ -264,16 +264,16 @@
             ]
         },
         {
-            "name": "python3-lynxpresence",
+            "name": "python3-pypresence",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"lynxpresence\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pypresence\" --no-build-isolation"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/08/f7/17b5d69dc9211939d2de19e921afb5effb1f2e14f8511b0264b4ceced5c2/lynxpresence-4.6.2-py3-none-any.whl",
-                    "sha256": "0c16193cb6ac76085ab30f7f9a8f11d45f3fd8396ce12a6186fb878295076623"
+                    "url": "https://files.pythonhosted.org/packages/bd/0d/1c817c6769ce0b64cc0dcc20bc9d0edb4dc560e83a3b5f0d5cbda04c3d35/pypresence-4.6.1-py3-none-any.whl",
+                    "sha256": "33d4549fcdf4102f81935df4ba587bacb22193e0c50c541d1ab9329b21df33cd"
                 }
             ]
         },
