@@ -23,7 +23,7 @@ Updating python3-modules.json:
 	beautifulsoup4 \
 	PlexAPI \
 	musicbrainzngs \
-	lynxpresence \
+	pypresence \
 	setproctitle \
 	unidecode \
 	pulsectl \
