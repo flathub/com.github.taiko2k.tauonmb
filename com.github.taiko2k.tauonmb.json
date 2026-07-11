@@ -8,7 +8,7 @@
     ],
     "command": "com.github.taiko2k.tauonmb.sh",
     "finish-args": [
-        "--require-version=1.15.6",
+        "--require-version=1.16.0",
         "--share=ipc",
         "--share=network",
         "--socket=wayland",
