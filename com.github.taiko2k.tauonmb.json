@@ -8,12 +8,14 @@
     ],
     "command": "com.github.taiko2k.tauonmb.sh",
     "finish-args": [
+        "--require-version=1.16.0",
         "--share=ipc",
         "--share=network",
         "--socket=wayland",
         "--socket=fallback-x11",
         "--socket=pulseaudio",
-        "--device=all",
+        "--device=dri",
+        "--device=input",
         "--filesystem=xdg-music",
         "--filesystem=xdg-download",
         "--filesystem=xdg-run/app/com.discordapp.Discord:create",
@@ -161,7 +163,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Taiko2k/Tauon.git",
-                    "commit": "c2d186a5a8180c3f6a81ae8f216858f09cbd0fa0"
+                    "commit": "c1c0111f8fffbdf1919d64c7cacee5fffb16e0a9"
                 }
             ]
         },
