@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.taiko2k.tauonmb",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "50",
+    "runtime-version": "51",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -164,7 +164,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Taiko2k/Tauon.git",
-                    "commit": "b09d1f0c354db5de92f6cf09e0cd7dd0c83573dd"
+                    "commit": "e52f5bd921664e43c80a900cf92a4f726444175c"
                 }
             ]
         },
