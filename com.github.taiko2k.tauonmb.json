@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.taiko2k.tauonmb",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "50",
+    "runtime-version": "51",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -154,8 +154,9 @@
                 "install -D extra/tauonmb-symbolic.svg /app/share/icons/hicolor/symbolic/apps/${FLATPAK_ID}-symbolic.svg",
                 "install -D src/tauon/assets/icon-64.png /app/share/icons/hicolor/64x64/apps/${FLATPAK_ID}.png",
                 "install -D src/tauon/assets/icon-128.png /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png",
-                "install -D extra/com.github.taiko2k.tauonmb.appdata.xml /app/share/metainfo/${FLATPAK_ID}.appdata.xml",
-                "install -D extra/com.github.taiko2k.tauonmb.desktop /app/share/applications/${FLATPAK_ID}.desktop",
+                "install -D extra/com.github.taiko2k.tauonmb.metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml",
+                "mkdir -p /app/share/applications",
+                "sed -e 's|^Exec=tauon |Exec=com.github.taiko2k.tauonmb.sh |' -e 's|^Icon=tauonmb$|Icon=com.github.taiko2k.tauonmb|' extra/tauonmb.desktop > /app/share/applications/${FLATPAK_ID}.desktop",
                 "install -D extra/com.github.taiko2k.tauonmb.sh /app/bin/com.github.taiko2k.tauonmb.sh"
             ],
             "sources": [
@@ -163,7 +164,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Taiko2k/Tauon.git",
-                    "commit": "382a601f5aa2837abbae6cb02f1d6161d8fc9147"
+                    "commit": "e52f5bd921664e43c80a900cf92a4f726444175c"
                 }
             ]
         },
