@@ -38,6 +38,7 @@
         "projectm.json",
         "fonts.json",
         "sdl3.json",
+        "chromaprint.json",
         {
             "name": "libopenmpt",
             "buildsystem": "autotools",
@@ -164,7 +165,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Taiko2k/Tauon.git",
-                    "commit": "e52f5bd921664e43c80a900cf92a4f726444175c"
+                    "commit": "4fb8925c12b9066f9610c72d1c40886e719ff25e"
                 }
             ]
         },
