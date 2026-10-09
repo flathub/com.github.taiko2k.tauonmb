@@ -18,8 +18,7 @@
     "-DENABLE_PLAYLIST=OFF"
   ],
   "modules": [
-    "glm.json",
-    "fftw3f.json"
+    "glm.json"
   ],
   "sources": [
     {
