@@ -1,0 +1,22 @@
+{
+    "name": "chromaprint",
+    "buildsystem": "cmake-ninja",
+    "config-opts": [
+        "-DBUILD_SHARED_LIBS=ON",
+        "-DBUILD_TOOLS=OFF",
+        "-DBUILD_TESTS=OFF",
+        "-DFFT_LIB=fftw3f"
+    ],
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://github.com/acoustid/chromaprint/releases/download/v1.6.1/chromaprint-1.6.1.tar.gz",
+            "sha256": "3368805af0ee47b9df74df10b5001a44569e01df2844dab520031720dde9ad23"
+        }
+    ],
+    "cleanup": [
+        "/include",
+        "/lib/pkgconfig",
+        "/lib/cmake"
+    ]
+}

@@ -1,3 +1,6 @@
+GNOME 51 provides pycairo and attrs in the runtime, and Cython in the SDK.
+Omit these packages from generated modules; builds use --no-build-isolation.
+
 these aren't picked up by the flatpak builder pip helper script
 
 Updating python-pylast.json: 

@@ -37,7 +37,7 @@
         "python3-PyOpenGL.json",
         "projectm.json",
         "fonts.json",
-        "sdl3.json",
+        "chromaprint.json",
         {
             "name": "libopenmpt",
             "buildsystem": "autotools",
@@ -50,42 +50,6 @@
                     "type": "archive",
                     "url": "https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-0.8.7+release.autotools.tar.gz",
                     "sha256": "275c29ef47be9992f62a35fcc96f7ca05c06d2fd05c9298b8dee9f743f75b089"
-                }
-            ],
-            "cleanup": [
-                "*.la",
-                "*.a",
-                "/include"
-            ]
-        },
-        {
-            "name": "wavpack",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://www.wavpack.com/wavpack-5.9.0.tar.bz2",
-                    "sha256": "b0038f515d322042aaa6bd352d437729c6f5f904363cc85bbc9b0d8bd4a81927"
-                }
-            ],
-            "cleanup": [
-                "*.la",
-                "*.a",
-                "/include",
-                "/bin",
-                "/share/man"
-            ]
-        },
-        {
-            "name": "opusfile",
-            "config-opts": [
-                "--disable-doc",
-                "--disable-examples"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://ftp.osuosl.org/pub/xiph/releases/opus/opusfile-0.12.tar.gz",
-                    "sha256": "118d8601c12dd6a44f52423e68ca9083cc9f2bfe72da7a8c1acb22a80ae3550b"
                 }
             ],
             "cleanup": [
@@ -110,20 +74,6 @@
                 "/include",
                 "/bin",
                 "/share/man"
-            ]
-        },
-        {
-            "name": "python3-pycairo",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pycairo\" --no-build-isolation"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/22/d9/1728840a22a4ef8a8f479b9156aa2943cd98c3907accd3849fb0d5f82bfd/pycairo-1.29.0.tar.gz",
-                    "sha256": "f3f7fde97325cae80224c09f12564ef58d0d0f655da0e3b040f5807bd5bd3142"
-                }
             ]
         },
         {
@@ -157,6 +107,7 @@
                 "install -D extra/com.github.taiko2k.tauonmb.metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml",
                 "mkdir -p /app/share/applications",
                 "sed -e 's|^Exec=tauon |Exec=com.github.taiko2k.tauonmb.sh |' -e 's|^Icon=tauonmb$|Icon=com.github.taiko2k.tauonmb|' extra/tauonmb.desktop > /app/share/applications/${FLATPAK_ID}.desktop",
+                "sed -i \"/^set -euo pipefail$/a export SDL_BINARY_PATH=$(pkg-config --variable=libdir sdl3)\" extra/com.github.taiko2k.tauonmb.sh",
                 "install -D extra/com.github.taiko2k.tauonmb.sh /app/bin/com.github.taiko2k.tauonmb.sh"
             ],
             "sources": [
@@ -164,7 +115,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Taiko2k/Tauon.git",
-                    "commit": "e52f5bd921664e43c80a900cf92a4f726444175c"
+                    "commit": "4fb8925c12b9066f9610c72d1c40886e719ff25e"
                 }
             ]
         },
