@@ -6,7 +6,7 @@
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
     ],
-    "command": "com.github.taiko2k.tauonmb.sh",
+    "command": "tauon",
     "finish-args": [
         "--share=ipc",
         "--share=network",
@@ -31,7 +31,6 @@
         "python-pylast.json",
         "python3-scikit-build-core.json",
         "python-dbus-deps.json",
-        "python-frozenlist.json",
         "python3-poetry-core.json",
         "python3-modules.json",
         "python3-PyOpenGL.json",
@@ -88,34 +87,28 @@
             "build-commands": [
                 "cargo --offline fetch --manifest-path src/lrclib-solver/Cargo.toml --verbose",
                 "cargo build --release --offline --manifest-path src/lrclib-solver/Cargo.toml --bin lrclib-solver",
-                "cp src/lrclib-solver/target/release/lrclib-solver src/tauon/lrclib-solver",
-                "rm -rf src/lrclib-solver/target",
 
-                "bash run.sh 5",
-                "python3 tools/i18n/compile_translations.py",
-                "rm -rf cargo",
-                "mkdir -p /app/share/locale",
-                "mv src/tauon/locale /app/share/",
-                "mkdir -p /app/bin",
-                "cp -r * /app/bin/",
-                "mkdir -p /app/share/icons/hicolor/scalable/apps",
-                "mkdir -p /app/share/icons/hicolor/symbolic/apps",
-                "install -D extra/tauonmb.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
-                "install -D extra/tauonmb-symbolic.svg /app/share/icons/hicolor/symbolic/apps/${FLATPAK_ID}-symbolic.svg",
-                "install -D src/tauon/assets/icon-64.png /app/share/icons/hicolor/64x64/apps/${FLATPAK_ID}.png",
-                "install -D src/tauon/assets/icon-128.png /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png",
-                "install -D extra/com.github.taiko2k.tauonmb.metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml",
-                "mkdir -p /app/share/applications",
-                "sed -e 's|^Exec=tauon |Exec=com.github.taiko2k.tauonmb.sh |' -e 's|^Icon=tauonmb$|Icon=com.github.taiko2k.tauonmb|' extra/tauonmb.desktop > /app/share/applications/${FLATPAK_ID}.desktop",
-                "sed -i \"/^set -euo pipefail$/a export SDL_BINARY_PATH=$(pkg-config --variable=libdir sdl3)\" extra/com.github.taiko2k.tauonmb.sh",
-                "install -D extra/com.github.taiko2k.tauonmb.sh /app/bin/com.github.taiko2k.tauonmb.sh"
+                "pip3 install --verbose --no-index --no-build-isolation --no-deps --prefix=${FLATPAK_DEST} .",
+
+                "cp src/lrclib-solver/target/release/lrclib-solver ${FLATPAK_DEST}/lib/python3*/site-packages/tauon/",
+                "mkdir -p ${FLATPAK_DEST}/share/locale",
+                "cp -r ${FLATPAK_DEST}/lib/python3*/site-packages/tauon/locale/. ${FLATPAK_DEST}/share/locale/",
+                "rm -rf ${FLATPAK_DEST}/lib/python3*/site-packages/tauon/locale",
+
+                "install -D extra/tauonmb.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
+                "install -D extra/tauonmb-symbolic.svg ${FLATPAK_DEST}/share/icons/hicolor/symbolic/apps/${FLATPAK_ID}-symbolic.svg",
+                "install -D src/tauon/assets/icon-64.png ${FLATPAK_DEST}/share/icons/hicolor/64x64/apps/${FLATPAK_ID}.png",
+                "install -D src/tauon/assets/icon-128.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png",
+                "install -D extra/com.github.taiko2k.tauonmb.metainfo.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml",
+                "mkdir -p ${FLATPAK_DEST}/share/applications",
+                "sed -e 's|^Icon=tauonmb$|Icon=com.github.taiko2k.tauonmb|' extra/tauonmb.desktop > ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
             ],
             "sources": [
                 "lrclib-solver-cargo-sources.json",
                 {
                     "type": "git",
                     "url": "https://github.com/Taiko2k/Tauon.git",
-                    "commit": "8758d52ecf8e9b6ccc66d00f840bba5d541aef1b"
+                    "commit": "ff8035e353ca097e0530bbb5a51dfe7ed92a233d"
                 }
             ]
         },

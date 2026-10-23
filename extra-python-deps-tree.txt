@@ -9,9 +9,6 @@ Updating python-pylast.json:
 Updating python-dbus-deps.json: 
 ./flatpak-builder-tools/pip/flatpak-pip-generator scikit-build setuptools_scm patchelf meson-python -o python-dbus-deps
 
-Updating python-frozenlist.json:
-./flatpak-builder-tools/pip/flatpak-pip-generator frozenlist -o python-frozenlist
-
 Updating python3-poetry-core.json:
 ./flatpak-builder-tools/pip/flatpak-pip-generator poetry-core -o python3-poetry-core
 
@@ -20,7 +17,6 @@ Updating python3-modules.json:
 	Pillow \
 	dbus-python \
 	mutagen \
-	PySDL3 \
 	Send2Trash \
 	requests \
 	beautifulsoup4 \
@@ -29,7 +25,6 @@ Updating python3-modules.json:
 	pypresence \
 	setproctitle \
 	unidecode \
-	pulsectl \
 	natsort \
 	websocket-client \
 	opencc-python-reimplemented \

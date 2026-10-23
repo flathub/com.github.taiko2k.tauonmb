@@ -60,80 +60,6 @@
             ]
         },
         {
-            "name": "python3-PySDL3",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"PySDL3\" --no-build-isolation"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/5f/fc/a7bf5b6e4e617b45f90f2d9d2a68519c249c81dd4fc2658c7a2a61c4f4b7/aiohappyeyeballs-2.6.2-py3-none-any.whl",
-                    "sha256": "4708045e2d7a6c6bdf8aafa8ed39649eaf926a4543b54560659129e3365953c4"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/77/9a/152096d4808df8e4268befa55fba462f440f14beab85e8ad9bf990516918/aiohttp-3.13.5.tar.gz",
-                    "sha256": "9d98cc980ecc96be6eb4c1994ce35d28d8b1f5e5208a23b421187d1209dbb7d1"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/fb/76/641ae371508676492379f16e2fa48f4e2c11741bd63c48be4b12a6b09cba/aiosignal-1.4.0-py3-none-any.whl",
-                    "sha256": "053243f8b92b990551949e63930a839ff0cf0b0ebbe0597b0f3fb19e1a0fe82e"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/59/8c/57e832b7af6d7c5abe66eb3fbe3a3a32f4d11ea23a1aa7131371035be991/certifi-2026.5.20-py3-none-any.whl",
-                    "sha256": "3c52e209ba0a4ad7aebe60436a4ab349c39e1e602e8c134221e546902ad25897"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/e7/a1/67fe25fac3c7642725500a3f6cfe5821ad557c3abb11c9d20d12c7008d3e/charset_normalizer-3.4.7.tar.gz",
-                    "sha256": "ae89db9e5f98a11a4bf50407d4363e7b09b31e55bc117b4f7d80aab97ba009e5"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/2d/f5/c831fac6cc817d26fd54c7eaccd04ef7e0288806943f7cc5bbf69f3ac1f0/frozenlist-1.8.0.tar.gz",
-                    "sha256": "3ede829ed8d842f6cd48fc7081d7a41001a56f1f38603f9d49bf3020d59a31ad"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/de/a7/f76514cc40ad6234098ecdebda08732d75964776c51a42845b7da10649e2/idna-3.17-py3-none-any.whl",
-                    "sha256": "466e48829084efe2548012b855df21540b96f2e20e51bd124c851536556a592c"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/1a/c2/c2d94cbe6ac1753f3fc980da97b3d930efe1da3af3c9f5125354436c073d/multidict-6.7.1.tar.gz",
-                    "sha256": "ec6652a1bee61c53a3e5776b6049172c53b6aaba34f18c9ad04f82712bac623d"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ec/44/c87281c333769159c50594f22610f77398a47ccbfbbf23074e744e86f87c/propcache-0.5.2.tar.gz",
-                    "sha256": "01c4fc7480cd0598bb4b57022df55b9ca296da7fc5a8760bd8451a7e63a7d427"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/a5/5f/290b001a4f46a3811caf103bd98fb23bae0c700ab231fde8e1d6bfe2ecdf/pysdl3-0.9.11b1-py3-none-any.whl",
-                    "sha256": "2dd0bfe859ae93564b38c97f718d1310dbb4ea898fe85baea499f03012b1a152"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl",
-                    "sha256": "2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/7f/3e/5db95bcf282c52709639744ca2a8b149baccf648e39c8cc87553df9eae0c/urllib3-2.7.0-py3-none-any.whl",
-                    "sha256": "9fb4c81ebbb1ce9531cce37674bbc6f1360472bc18ca9a553ede278ef7276897"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/79/12/1e8f37460ea0f7eb59c221fdaf0ed75e7ac43e97f8093b9c6f411df50a78/yarl-1.24.2.tar.gz",
-                    "sha256": "9ac374123c6fd7abf64d1fec93962b0bd4ee2c19751755a762a72dd96c0378f8"
-                }
-            ]
-        },
-        {
             "name": "python3-Send2Trash",
             "buildsystem": "simple",
             "build-commands": [
@@ -297,20 +223,6 @@
                     "type": "file",
                     "url": "https://files.pythonhosted.org/packages/8f/b7/559f59d57d18b44c6d1250d2eeaa676e028b9c527431f5d0736478a73ba1/Unidecode-1.4.0-py3-none-any.whl",
                     "sha256": "c3c7606c27503ad8d501270406e345ddb480a7b5f38827eafe4fa82a137f0021"
-                }
-            ]
-        },
-        {
-            "name": "python3-pulsectl",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pulsectl\" --no-build-isolation"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/62/a9/5b119f86dd1a053c55da7d0355fca2ad215bae6f7f4777d46b307a8cc3e9/pulsectl-24.12.0-py2.py3-none-any.whl",
-                    "sha256": "13a60be940594f03ead3245b3dfe3aff4a3f9a792af347674bde5e716d4f76d2"
                 }
             ]
         },
